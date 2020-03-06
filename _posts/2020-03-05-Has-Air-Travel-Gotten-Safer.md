@@ -45,7 +45,7 @@ Several important technological and regulatory innovations in the industry are c
 
 Despite all these changes, a glimpse at just this graph and the total number of annual crashes makes it appear as though planes are still as dangerous now as they were in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the Plane Crash dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
 
-To get a more detailed picture of plane crash probabilities, We can use data from (the World Bank)[/uri <https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false>, "World Bank"] on total number of flights from 1970-2018.
+To get a more detailed picture of plane crash probabilities, We can use data from [the World Bank](<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false> "World Bank") on total number of flights from 1970-2018.
 
 Now using this data, we can see directly how the number of flights has increased and the number of crashes decreased in the modern era of aviation (1970-present).
 
