@@ -15,11 +15,13 @@ I have a massive fear of flying.
 
 And, I'm not alone: up to 30% of the population have the same fears, with between 2-10% of people possessing a phobia of flying. Many people overestimate the likelihood of catastrophic events, and/or are misinformed about the dangers of air travel, which contribute to anxiety about flight or even the development of aviophobia.<sup name="a1">[1](#f1)</sup>
 
-But whether you have family all over the world or demanding career, sometimes you just can't avoid air travel. In our busy, interconnected world, flying is practically a necessity. Despite my best efforts, I seem to manage to take at least one intercontinental round trip and several domestic flights every year. But still, every time I board a plane, I sweat and fidget until well after reaching cruising altitude. Every minor turbulent bump gives me flashes of panic. Landing makes my knees weak. And to compound all this, my own fear has led me to have a morbid fascination with plane crashes.
+But whether you have family all over the world or demanding career, sometimes you just can't avoid air travel. In our busy, interconnected world, flying is practically a necessity. Despite my best efforts, I seem to manage to take at least one intercontinental round trip and several domestic flights every year. But still, every time I board a plane, I sweat and fidget until well after reaching cruising altitude. Every minor turbulent bump gives me flashes of panic. Landing makes me weak in the knees. And to compound all this, my own fear has led me to have a morbid fascination with plane crashes.
 
-I decided to look at data on airplane crashes to try and better understand the reality of flight. How have trends in these accidents changed over time? Which aircraft carriers or planes are the most dangerous? Hopefully, this investigation will help me banish my anxiety once and for all.
+I decided to look at data on airplane crashes to try and better understand the reality of flight. How have trends in accidents changed over time? Hopefully, this investigation will help me banish my anxiety once and for all.
 
-Using data from [planecrashinfo.com](<http://www.planecrashinfo.com/database.htm> "planecrashinfo.com"), we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
+Using data from [planecrashinfo.com](<http://www.planecrashinfo.com/database.htm> "planecrashinfo.com"), we can investigate plane crashes over the last 111 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
+
+##Crash Breakdown 
 
 First, I wanted to get an understanding of the accidents by industry type. Do commercial flights crash more often than other types of flights?
 
@@ -49,12 +51,13 @@ When we look at crash distribution throughout the history of aviation, we can ge
   <img src="/img/plane/hist.png"/>
 </p>
 
+##Safety 
 
-Several important technological and regulatory innovations in the industry are credited with increasing safety, primarily the implementation of navigational and flights aids such as radio positioning and GPS, and technological and materials improvements allowing for better fire safety and other technical improvements to aircraft. Crew Resource Management (CRM), is a human-error and threat-response risk-mitigation system that was first theorized in the 1970s as a result of analysis of crashes like Eastern Air Lines 401. Unfortunately, CRM was not widely adopted until the early 1990s, largely due to the low buy-in of flight crews and crew adherence to traditionalist ideas of cockpit hierarchy. Studies in the 1980s showed that up to 70% of all aircraft accidents were escalated or caused by human factors, rather than pure mechanical failure.<sup name="a2">[2](#f2)</sup> The enforced regulation of CRM training and industry-wide buy-into CRM techniques due to the heroic actions of the United 232 crew are widely credited with the decline in aircraft crashes in the 1990s.<sup name="a4">[4](#f4)</sup>
+Several important technological and regulatory innovations in the industry are credited with increasing safety, primarily the implementation of navigational and flight aids such as radio positioning and GPS, and technological and materials improvements allowing for better fire safety and other technical improvements to aircraft. Crew Resource Management (CRM), is a human-error and threat-response risk-mitigation system that was first theorized in the 1970s as a result of analysis of crashes like Eastern Air Lines 401. Unfortunately, CRM was not widely adopted until the early 1990s, largely due to the low buy-in of flight crews and crew adherence to traditionalist ideas of cockpit hierarchy. Studies in the 1980s showed that up to 70% of all aircraft accidents were escalated or caused by human factors, rather than pure mechanical failure.<sup name="a2">[2](#f2)</sup> The decline in the number of aircraft crashes in the 1990s is due to enforced regulation of CRM training and industry-wide buy-in following the heroic actions of the United 232 crew in 1989.<sup name="a4">[4](#f4)</sup>
 
-Despite all these changes, a glimpse at only this graph and the increasing total number of annual crashes makes it appear as though planes are still as dangerous now as they were in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the Plane Crash dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
+Despite all these innovations, a glimpse at only this graph and the total number of annual crashes makes it appear as though air travel is not significantly safer now than it was in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the Plane Crash dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
 
-To get a more detailed picture of plane crash probabilities, we can use data from [the World Bank](<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false> "World Bank") on the total number of flights worldwide from 1970-2018. Thanks to this new information, we can now directly visualize how the number of flights has increased as the number of crashes has decreased in the modern era of aviation (1970-present).
+To get a more detailed picture of plane crash probabilities, we can use data from [the World Bank](<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false> "World Bank") on the total number of flights worldwide. By utilizing this new information, we can now directly visualize how the number of flights has increased as the number of crashes has decreased in the modern era of aviation (1970-present).
 
 
 <p align="center">
@@ -64,7 +67,7 @@ To get a more detailed picture of plane crash probabilities, we can use data fro
 
 As the above graphs illustrate, the total number of crashes is slowly decreasing, while the total number of worldwide flights is increasing, resulting in an ever-shrinking crash percentage. 
 
-We can get a closer look at technological and regulatory improvements to aviation safety by comparing implementation dates with the total crash rate over time. Since we're zoomed into the last 40 years, we can add even more saftey laws and innovations to our timeline. 
+We can get a closer look at technological and regulatory improvements to aviation safety by comparing implementation dates with the total crash rate over time. Since we're zoomed into the last 40 years, we can include even more saftey laws and innovations to our timeline. 
 
 <p align="center">
   <img src="/img/plane/line.png"/>
@@ -76,7 +79,7 @@ The last 40 years of aviation have seen a revolution in safety and quality as sc
 Other equipment, like Traffic Alert and Collision Avoidance Systems (TCAS) had their innovative roots much earlier than their widespread implementation. TCAS use radio signaling to give pilots warnings about objects in their flightpath. This technology helps avoid midair collision and help pilots coordinate with air traffic control for safe takeoff, landing, and taxiing at airports. Preliminary research into collision avoidance started as early as the 1950s or 1960s, but was not widely implemented into a comprehensive, responsive modern system until 1995 with the implementation of TCAS II. 
 
 
-As science and technology have improved, so have aviation regulations. Laws such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandated certain minimum periods of rest be provided to pilots and crew between flights. These laws were enacted after research into human error and fatigue factors. Other regulatory rules, like AC 25.981-2A or SFAR 88, were implemented after a combination of aviation accident investigations and material science improvements allowed for great improvements to flammability risk mitigation.<sup name="a6">[6](#f6)</sup>
+As science and technology have improved, so have aviation regulations. Laws such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandate that certain minimum periods of rest be provided to pilots and crew between flights. These laws were enacted after research into human error and fatigue factors. Other regulatory rules, like AC 25.981-2A or SFAR 88, were implemented after a combination of aviation accident investigations and progress in material science allowed for great improvement to flammability risk mitigation.<sup name="a6">[6](#f6)</sup>
 
 
 
