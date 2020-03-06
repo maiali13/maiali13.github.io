@@ -39,6 +39,8 @@ Further exploration of this dataset reveals that we can break down the summaries
 
 An example of this is CFIT (controlled flight into terrain), which is type of crash in which a plane crashes into landscape or buildings. CFIT was exceedingly common in before modern aviation innovations like GPS, radar, and collision warning systems, and has caused over 9,000 fatalities since the beginning of flight. CFIT can be caused by low visibility, but it is also commonly caused by human error factors, like distracted crew.<sup name="a3">[3](#f3)</sup>  In 1972, Eastern Air Lines 401 crashed into the Florida Everglades, killing 99 people, due to crew fixation on a burned-out lightbulb in the instrumentation of the nose gear.
 
+<img align="right" width="550" height="345" src="https://www.miamiherald.com/latest-news/86rzrb/picture223179495/alternates/FREE_1140/00pic16%20CRASH%20EGH%20MHD.JPG">
+
 When we look at crash distribution throughout the history of aviation, we can get a bigger picture. Rises in crash numbers correspond to increases in the frequency and number of flights as technology improves, and economic and political factors change with time. Increases in crashes after 1945, for example, correspond to the boom in commercial aviation as WWII ended and newly-developed four-engine aircraft become available for non-military use.
 
 ![][3]
