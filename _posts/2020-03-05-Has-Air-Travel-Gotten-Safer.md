@@ -57,7 +57,7 @@ Several important technological and regulatory innovations in the industry are c
 
 Despite all these innovations, a glimpse at only this graph and the similar numbers of total crashes annually makes it appear as though air travel is not significantly safer now than it was in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the [planecrashinfo.com](<planecrashinfo.com> "planecrashinfo.com") dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
 
-To get a more detailed picture of plane crash probabilities, we can use data from [the World Bank](<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false> "World Bank") on the total number of flights worldwide. By utilizing this new information, we can now directly visualize how the number of flights has increased as the number of crashes has decreased in the modern era of aviation (1970-present).
+To get a more detailed picture of plane crash probabilities, we can use data from [the World Bank](<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false> "World Bank") on the total number of flights worldwide. Utilizing this new information, we can now directly visualize how the number of flights has increased as the number of crashes has decreased in the modern era of aviation (1970-present).
 
 
 <p align="center">
