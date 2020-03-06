@@ -38,6 +38,7 @@ Commercial flights, which are primarily passenger aircraft, make up 76% of total
 Further exploration of this dataset reveals that we can break down the summaries of crash incidents to see what is causing them. Of all crashes throughout history, weather and visibility were the leading cause of aircraft crashes, followed by mechanical failure. Fire in the cabin led to 18% of crashes, while violence including hijacking or shooting down of aircraft resulted in less than 2% of all crashes. Pure pilot error resulted in 5%. However, it is worth noting that studies in aviation have led to the realization that a large percentage of crashes, while not directly caused by human error factors, were escalated from mitigatable issues into crashes by human error.<sup name="a2">[2](#f2)</sup>
 
 <img align="right" width="500" height="310" src="/img/plane/EA401.jpg" />
+
 An example of this is CFIT (controlled flight into terrain), which is type of crash in which a plane crashes into landscape or buildings. CFIT was exceedingly common in before modern aviation innovations like GPS, radar, and collision warning systems, and has caused over 9,000 fatalities since the beginning of flight. CFIT can be caused by low visibility, but it is also commonly caused by human error factors, like distracted crew.<sup name="a3">[3](#f3)</sup>  In 1972, Eastern Air Lines 401 crashed into the Florida Everglades, killing 99 people, due to crew fixation on a burned-out lightbulb in the instrumentation of the nose gear.
 
 
@@ -82,8 +83,8 @@ Regulations such as 14 CFR 117 placed a limit on the number of total and consecu
 
 No endeavor is ever 100% safe. But flight has never been safer than it is today. In fact, such safety rates are a pinnacle of human innovation and achievement.
 
-**Sources:**
 
+**Sources:**
 
 
 <b name="f1">1 - </b> Ponton, L. \"Understanding the Fear of Flying.\" *Psych Central*. https://psychcentral.com/lib/understanding-the-fear-of-flying/ (retrieved March, 2020). [↩](#a1)
@@ -97,10 +98,3 @@ No endeavor is ever 100% safe. But flight has never been safer than it is today.
 <b name="f5">5 - </b> Miller, et al. (2009). \"Contribution of Flight Systems to Performance-Based Navigation\". *AERO Magazine* (34, Qtr. 2). [↩](#a5)
 
 <b name="f6">6 - </b> Rudari, Lukas, Johnson, Geske, and Sperlak. "Pilot Perceptions on Impact of Crew Rest Regulations on Safety and Fatigue." *International Journal of Aviation, Aeronautics, and Aerospace*, February 19, 2016. https://doi.org/10.15394/ijaaa.2016.1096. [↩](#a6)
-
-  [1]: img/plane/pie.png
-  [2]: img/plane/bar.png
-  [3]: media/image3.png {width="6.489583333333333in" height="1.53125in"}
-  [4]: media/image4.png {width="6.489583333333333in" height="3.3020833333333335in"}
-  [5]: media/image5.png {width="6.489583333333333in" height="3.4166666666666665in"}
-  [6]: media/image6.png {width="6.489583333333333in" height="2.1458333333333335in"}
