@@ -13,7 +13,7 @@ published: true
 
 I have a massive fear of flying.
 
-I'm not alone: up to 30% of the population have the same fears, with between 2-10% of people possessing a phobia of flying. Many people overestimate the likelihood of catastrophic events, and/or are misinformed about the dangers of air travel, which contribute to anxiety about flight or even the development of aviophobia.<sup name="a1">[1](#f1)</sup>
+And, I'm not alone: up to 30% of the population have the same fears, with between 2-10% of people possessing a phobia of flying. Many people overestimate the likelihood of catastrophic events, and/or are misinformed about the dangers of air travel, which contribute to anxiety about flight or even the development of aviophobia.<sup name="a1">[1](#f1)</sup>
 
 But whether you have family all over the world or demanding career, sometimes you just can't avoid air travel. In our busy, interconnected world, flying is practically a necessity. Despite my best efforts, I seem to manage to take at least one intercontinental round trip and several domestic flights every year. But still, every time I board a plane, I sweat and fidget until well after reaching cruising altitude. Every minor turbulent bump gives me flashes of panic. Landing makes my knees weak. And to compound all this, my own fear has led me to have a morbid fascination with plane crashes.
 
@@ -100,3 +100,5 @@ No endeavor is ever 100% risk-free. But flight has never been safer than it is t
 <b name="f5">5 - </b> Miller, et al. (2009). \"Contribution of Flight Systems to Performance-Based Navigation\". *AERO Magazine* (34, Qtr. 2). [↩](#a5)
 
 <b name="f6">6 - </b> Rudari, Lukas, Johnson, Geske, and Sperlak. "Pilot Perceptions on Impact of Crew Rest Regulations on Safety and Fatigue." *International Journal of Aviation, Aeronautics, and Aerospace*, February 19, 2016. https://doi.org/10.15394/ijaaa.2016.1096. [↩](#a6)
+
+The jupityer notebook used to prepare and visualize the data and can accessed at [this]() Github repository.
