@@ -45,7 +45,10 @@ An example of this is CFIT (controlled flight into terrain), which is type of cr
 
 When we look at crash distribution throughout the history of aviation, we can get a bigger picture. Rises in crash numbers correspond to increases in the frequency and number of flights as technology improves, and economic and political factors change with time. Increases in crashes after 1945, for example, correspond to the boom in commercial aviation as WWII ended and newly-developed four-engine aircraft become available for non-military use.
 
-![][3]
+<p align="center">
+  <img src="https://github.com/maiali13/maiali13.github.io/blob/master/img/plane/hist.png">
+</p>
+
 
 Several important technological and regulatory innovations in the industry are credited with increasing safety, primarily the implementation of navigational and flights aids such as radio positioning and GPS, and technological and materials improvements allowing for better fire safety and other technical improvements to aircraft. Crew Resource Management (CRM), is a human-error and threat-response risk-mitigation system that was first theorized in the 1970s as a result of analysis of crashes like Eastern Air Lines 401. Unfortunately, CRM was not widely adopted until the early 1990s, largely due to the low buy-in of flight crews and crew adherence to traditionalist ideas of cockpit hierarchy. Studies in the 1980s showed that up to 70% of all aircraft accidents were escalated or caused by human factors, rather than pure mechanical failure.\[2\] The enforced regulation of CRM training and industry-wide buy-into CRM techniques due to the heroic actions of the United 232 crew are widely credited with the decline in aircraft crashes in the 1990s. <sup name="a4">[4](#f4)</sup>
 
