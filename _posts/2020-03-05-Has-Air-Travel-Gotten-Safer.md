@@ -19,7 +19,7 @@ But whether you have family all over the world or demanding career, sometimes yo
 
 I decided to look at data on airplane crashes to try and better understand the reality of flight. How have trends in these accidents changed over time? Which aircraft carriers or planes are the most dangerous? Hopefully, this investigation will help me banish my anxiety once and for all.
 
-Using data from (planecrashinfo.com)[/uri <http://www.planecrashinfo.com/database.htm> "planecrashinfo.com"], we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
+Using data from (planecrashinfo.com)[<http://www.planecrashinfo.com/database.htm> "planecrashinfo.com"], we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
 
 \[pie chart\]
 
