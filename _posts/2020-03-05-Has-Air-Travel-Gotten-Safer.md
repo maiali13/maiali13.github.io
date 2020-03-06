@@ -24,7 +24,7 @@ Using data from [planecrashinfo.com](<http://www.planecrashinfo.com/database.htm
 First, I wanted to get an understanding of the accidents by industry type. Do commercial flights crash more often than other types of flights?
 
 <p align="center">
-![pie chart](https://github.com/maiali13/maiali13.github.io/blob/master/img/plane/pie.png)
+  img src="https://github.com/maiali13/maiali13.github.io/blob/master/img/plane/pie.png"
 </p>
 
 Commercial flights, which are primarily passenger aircraft, make up 76% of total crashes. Delivery flights, or flights exclusively for mail and cargo, made up only about 2% of crashes. All recreational and private flights made up only 6% of total crashes. Military aircraft make up 16% of total crashes. Not much to dissuade my fears, here.
