@@ -21,11 +21,9 @@ I decided to look at data on airplane crashes to try and better understand the r
 
 Using data from [planecrashinfo.com](<http://www.planecrashinfo.com/database.htm> "planecrashinfo.com"), we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
 
-\[pie chart\]
-
-![][1]
-
 First, I wanted to get an understanding of the accidents by industry type. Do commercial flights crash more often than other types of flights?
+
+![pie chart](https://github.com/maiali13/maiali13.github.io/blob/master/img/plane/pie.png){: .center-block :}
 
 Commercial flights, which are primarily passenger aircraft, make up 76% of total crashes. Delivery flights, or flights exclusively for mail and cargo, made up only about 2% of crashes. All recreational and private flights made up only 6% of total crashes. Military aircraft make up 16% of total crashes. Not much to dissuade my fears, here.
 
