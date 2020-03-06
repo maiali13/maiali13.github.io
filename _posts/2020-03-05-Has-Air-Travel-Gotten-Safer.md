@@ -66,22 +66,26 @@ Now using this data, we can see directly how the number of flights has increased
 
 As the data illustrates, the total number of crashes is slowly decreasing, while the total number of worldwide flights is increasing.
 
-We can get a closer look at technological and regulatory improvements to aviation safety by comparing important dates with crash rate over time.
+We can get a closer look at technological and regulatory improvements to aviation safety by comparing implementation dates with the total crash rate over time. Since we're zoomed into the last 40 years, we can add even more safty laws and innovations to our timeline. 
 
 <p align="center">
   <img src="/img/plane/line.png"/>
 </p>
 
-FMS, or flight management systems, are essentially what a layman would consider to be autopilot technology. A plane's FMS may calculate everything from elevation, flightpath, engine power levels, wing flap orientations, etc. FMS systems in 2020 are even more complex, calculating precise instrumentation levels, and location data for the entirety of the flight trip.<sup name="a5">[5](#f5)</sup>
 
-Traffic Alert and Collision Avoidance Systems (TACS II+) use radio signaling to give pilots warnings about objects in their flightpath. This technology helps avoid midair collision and help pilots coordinate with air traffic control for safe takeoff, landing, and taxiing at airports.
+The last 40 years of aviation have seen a revolution in safety and quality as science and computing rapidly evolved in the digital age and regulations struggle to keep up. Many technologies saw basic implementation in the 1970s or 1980s, and have since seen continuous improvement, such as flight management systems (FMS). FMS are essentially what a layman would consider to be autopilot technology. A plane's FMS may calculate everything from elevation, flightpath, engine power levels, wing flap orientations, etc. While they were first developed in the early 1980s, FMS systems in 2020 are exponentially more complex- calculating precise instrumentation levels, and location data for the entirety of the flight trip.<sup name="a5">[5](#f5)</sup>
 
-Regulations such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandated certain minimum periods of rest be provided to pilots and crew between flights.<sup name="a6">[6](#f6)</sup>
+Other equipment, like Traffic Alert and Collision Avoidance Systems (TCAS) had their innvovative roots much earlier than their widespread implementation. TCAS use radio signaling to give pilots warnings about objects in their flightpath. This technology helps avoid midair collision and help pilots coordinate with air traffic control for safe takeoff, landing, and taxiing at airports. Preliminary research into collision avoidance started as early as the 1950s or 1960s, but was not widely implemented into a comprehensive, responsive modern system until 1995 with the implementation of TCAS II. 
+
+
+As science and technology have improved, so have aviation regulations. Laws such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandated certain minimum periods of rest be provided to pilots and crew between flights. These laws were enacted after research into human error and fatigue factors. Other regulatory rules, like AC 25.981-2A or SFAR 88, were implemented after a combination of aviation accident investigations and material science improvements allowed for great improvements to flammability risk mitigation.<sup name="a6">[6](#f6)</sup>
+
+
 
 **Conclusion**
 
 
-No endeavor is ever 100% safe. But flight has never been safer than it is today. In fact, such safety rates are a pinnacle of human innovation and achievement.
+No endeavor is ever 100% risk-free. But flight has never been safer than it is today. Air travel has evolved from a rare luxury at the dawn of the twentieth century to a necessity in our present. Today's safe skies are a result of over a hundred years of fatal trial and error, the acceleration of coutnless scientific fields, and the diligence of aviators worldwide. 
 
 
 **Sources:**
