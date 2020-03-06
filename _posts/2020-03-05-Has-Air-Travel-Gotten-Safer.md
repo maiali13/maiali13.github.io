@@ -76,7 +76,7 @@ FMS, or flight management systems, are essentially what a layman would consider 
 
 Traffic Alert and Collision Avoidance Systems (TACS II+) use radio signaling to give pilots warnings about objects in their flightpath. This technology helps avoid midair collision and help pilots coordinate with air traffic control for safe takeoff, landing, and taxiing at airports.
 
-Regulations such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandated certain minimum periods of rest be provided to pilots and crew between flights.<sup name="a5">[5](#f5)</sup>
+Regulations such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandated certain minimum periods of rest be provided to pilots and crew between flights.<sup name="a6">[6](#f6)</sup>
 
 **Conclusion**
 
