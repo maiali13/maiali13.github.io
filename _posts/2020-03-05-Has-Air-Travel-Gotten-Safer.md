@@ -52,11 +52,9 @@ When we look at crash distribution throughout the history of aviation, we can ge
 
 Several important technological and regulatory innovations in the industry are credited with increasing safety, primarily the implementation of navigational and flights aids such as radio positioning and GPS, and technological and materials improvements allowing for better fire safety and other technical improvements to aircraft. Crew Resource Management (CRM), is a human-error and threat-response risk-mitigation system that was first theorized in the 1970s as a result of analysis of crashes like Eastern Air Lines 401. Unfortunately, CRM was not widely adopted until the early 1990s, largely due to the low buy-in of flight crews and crew adherence to traditionalist ideas of cockpit hierarchy. Studies in the 1980s showed that up to 70% of all aircraft accidents were escalated or caused by human factors, rather than pure mechanical failure.<sup name="a2">[2](#f2)</sup> The enforced regulation of CRM training and industry-wide buy-into CRM techniques due to the heroic actions of the United 232 crew are widely credited with the decline in aircraft crashes in the 1990s.<sup name="a4">[4](#f4)</sup>
 
-Despite all these changes, a glimpse at just this graph and the total number of annual crashes makes it appear as though planes are still as dangerous now as they were in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the Plane Crash dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
+Despite all these changes, a glimpse at only this graph and the increasing total number of annual crashes makes it appear as though planes are still as dangerous now as they were in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the Plane Crash dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
 
-To get a more detailed picture of plane crash probabilities, We can use data from [the World Bank](<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false> "World Bank") on total number of flights from 1970-2018.
-
-Now using this data, we can see directly how the number of flights has increased and the number of crashes decreased in the modern era of aviation (1970-present).
+To get a more detailed picture of plane crash probabilities, we can use data from [the World Bank](<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false> "World Bank") on the total number of flights worldwide from 1970-2018. Thanks to this new information, we can now directly visualize how the number of flights has increased as the number of crashes has decreased in the modern era of aviation (1970-present).
 
 
 <p align="center">
@@ -64,7 +62,7 @@ Now using this data, we can see directly how the number of flights has increased
   <img src="/img/plane/line2.png" />
 </p>
 
-As the data illustrates, the total number of crashes is slowly decreasing, while the total number of worldwide flights is increasing.
+As the above graphs illustrate, the total number of crashes is slowly decreasing, while the total number of worldwide flights is increasing, resulting in an ever-shrinking crash percentage. 
 
 We can get a closer look at technological and regulatory improvements to aviation safety by comparing implementation dates with the total crash rate over time. Since we're zoomed into the last 40 years, we can add even more safty laws and innovations to our timeline. 
 
