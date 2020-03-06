@@ -11,11 +11,11 @@ published: true
 
 
 
-I have a massive fear of flying.
+I have an enormous fear of flying.
 
 And, I'm not alone: up to 30% of the population have the same fears, with between 2-10% of people possessing a phobia of flying. Many people overestimate the likelihood of catastrophic events, and/or are misinformed about the dangers of air travel, which contribute to anxiety about flight or even the development of aviophobia.<sup name="a1">[1](#f1)</sup>
 
-But whether you have family all over the world or demanding career, sometimes you just can't avoid air travel. In our busy, interconnected world, flying is practically a necessity. Despite my best efforts, I seem to manage to take at least one intercontinental round trip and several domestic flights every year. But still, every time I board a plane, I sweat and fidget until well after reaching cruising altitude. Every minor turbulent bump gives me flashes of panic. Landing makes me weak in the knees. And to compound all this, my own fear has led me to have a morbid fascination with plane crashes.
+But whether you have family all over the world or demanding career, sometimes you just can't avoid air travel. In our busy, interconnected world, flying is practically a necessity. Despite my best efforts, I seem to manage to take at least one intercontinental round trip and several domestic flights every year. But still, every time I board a plane, I sweat and fidget until well after reaching cruising altitude. Every minor turbulent bump leaves me shaking in my seat. Landing makes me queasy. And to compound all this, my own fear has led me to have a morbid fascination with plane crashes.
 
 I decided to look at data on airplane crashes to try and better understand the reality of flight. How have trends in accidents changed over time? Hopefully, this investigation will help me banish my anxiety once and for all.
 
