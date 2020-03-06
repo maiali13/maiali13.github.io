@@ -21,7 +21,7 @@ I decided to look at data on airplane crashes to try and better understand the r
 
 Using data from [planecrashinfo.com](<http://www.planecrashinfo.com/database.htm> "planecrashinfo.com"), we can investigate plane crashes over the last 111 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
 
-##Crash Breakdown 
+### Crash Breakdown 
 
 First, I wanted to get an understanding of the accidents by industry type. Do commercial flights crash more often than other types of flights?
 
@@ -51,7 +51,7 @@ When we look at crash distribution throughout the history of aviation, we can ge
   <img src="/img/plane/hist.png"/>
 </p>
 
-##Safety 
+### Safety 
 
 Several important technological and regulatory innovations in the industry are credited with increasing safety, primarily the implementation of navigational and flight aids such as radio positioning and GPS, and technological and materials improvements allowing for better fire safety and other technical improvements to aircraft. Crew Resource Management (CRM), is a human-error and threat-response risk-mitigation system that was first theorized in the 1970s as a result of analysis of crashes like Eastern Air Lines 401. Unfortunately, CRM was not widely adopted until the early 1990s, largely due to the low buy-in of flight crews and crew adherence to traditionalist ideas of cockpit hierarchy. Studies in the 1980s showed that up to 70% of all aircraft accidents were escalated or caused by human factors, rather than pure mechanical failure.<sup name="a2">[2](#f2)</sup> The decline in the number of aircraft crashes in the 1990s is due to enforced regulation of CRM training and industry-wide buy-in following the heroic actions of the United 232 crew in 1989.<sup name="a4">[4](#f4)</sup>
 
@@ -83,11 +83,13 @@ As science and technology have improved, so have aviation regulations. Laws such
 
 
 
-**Conclusion**
+### Conclusion
 
 
 No endeavor is ever 100% risk-free. But flight has never been safer than it is today. Air travel has evolved from a rare luxury at the dawn of the twentieth century to a necessity in our present. Today's safe skies are a result of over a hundred years of fatal trial and error, the acceleration of countless scientific fields, and the diligence of aviators worldwide. 
 
+
+--- 
 
 **Sources:**
 
