@@ -41,7 +41,7 @@ Further exploration of this dataset reveals that we can break down the summaries
 
 <img align="right" width="500" height="310" src="/img/plane/EA401.jpg" />
 
-An example of this is CFIT (controlled flight into terrain), which is type of crash in which a plane crashes into landscape or buildings. CFIT was exceedingly common in before modern aviation innovations like GPS, radar, and collision warning systems, and has caused over 9,000 fatalities since the beginning of flight. CFIT can be caused by low visibility, but it is also commonly caused by human error factors, like distracted crew.<sup name="a3">[3](#f3)</sup>  In 1972, Eastern Air Lines 401 crashed into the Florida Everglades, killing 99 people, due to crew fixation on a burned-out lightbulb in the instrumentation of the nose gear.
+An example of this is CFIT (controlled flight into terrain), which is type of crash in which a plane crashes into landscape or buildings, while mechanically fit to fly. CFIT was common before modern aviation innovations like GPS, radar, and collision warning systems, and has caused over 9,000 fatalities since the beginning of flight. CFIT can be caused by low visibility, but it is most typically caused by human error factors, like distracted crew.<sup name="a3">[3](#f3)</sup> In 1972, Eastern Air Lines 401 crashed into the Florida Everglades, killing 99 people, due to crew fixation on a burned-out lightbulb in the instrumentation of the nose gear.
 
 
 
@@ -79,7 +79,7 @@ The last 40 years of aviation have seen a revolution in safety and quality as sc
 Other equipment, like Traffic Alert and Collision Avoidance Systems (TCAS) had their innovative roots much earlier than their widespread implementation. TCAS use radio signaling to give pilots warnings about objects in their flightpath. This technology helps avoid midair collision and help pilots coordinate with air traffic control for safe takeoff, landing, and taxiing at airports. Preliminary research into collision avoidance started as early as the 1950s or 1960s, but was not widely implemented into a comprehensive, responsive modern system until 1995 with the implementation of TCAS II. 
 
 
-As science and technology have improved, so have aviation regulations. Laws such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandate that certain minimum periods of rest be provided to pilots and crew between flights. These laws were enacted after research into human error and fatigue factors. Other regulatory rules, like AC 25.981-2A or SFAR 88, were implemented after a combination of aviation accident investigations and progress in material science allowed for great improvement to flammability risk mitigation.<sup name="a6">[6](#f6)</sup>
+As science and technology have improved, so have aviation regulations. Laws such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandate that certain minimum periods of rest be provided to pilots and crew between flights. These laws were enacted after research into human error and fatigue factors. Other standards, like AC 25.981-2A or SFAR 88, were implemented after a combination of aviation accident investigations and progress in material science allowed for great improvement to flammability risk mitigation.<sup name="a6">[6](#f6)</sup>
 
 
 
