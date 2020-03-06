@@ -19,7 +19,7 @@ But whether you have family all over the world or demanding career, sometimes yo
 
 I decided to look at data on airplane crashes to try and better understand the reality of flight. How have trends in these accidents changed over time? Which aircraft carriers or planes are the most dangerous? Hopefully, this investigation will help me banish my anxiety once and for all.
 
-Using data from planecrashinfo.com (<http://www.planecrashinfo.com/database.htm>), we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.[^1]
+Using data from planecrashinfo.com (<http://www.planecrashinfo.com/database.htm>), we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
 
 \[pie chart\]
 
@@ -33,15 +33,15 @@ Commercial flights, which are primarily passenger aircraft, make up 76% of total
 
 ![][2]
 
-Further exploration of this dataset reveals that we can break down the summaries of crash incidents to see what is causing them. Of all crashes throughout history, weather and visibility were the leading cause of aircraft crashes, followed by mechanical failure. Fire in the cabin led to 18% of crashes, while violence including hijacking or shooting down of aircraft resulted in less than 2% of all crashes. Pure pilot error resulted in 5%. However, it is worth noting that studies in aviation have led to the realization that a large percentage of crashes, while not directly caused by human error factors, were escalated from mitigatable issues into crashes by human error.[^2]
+Further exploration of this dataset reveals that we can break down the summaries of crash incidents to see what is causing them. Of all crashes throughout history, weather and visibility were the leading cause of aircraft crashes, followed by mechanical failure. Fire in the cabin led to 18% of crashes, while violence including hijacking or shooting down of aircraft resulted in less than 2% of all crashes. Pure pilot error resulted in 5%. However, it is worth noting that studies in aviation have led to the realization that a large percentage of crashes, while not directly caused by human error factors, were escalated from mitigatable issues into crashes by human error.<sup name="a2">[2](#f2)</sup>
 
-An example of this is CFIT (controlled flight into terrain), which is type of crash in which a plane crashes into landscape or buildings. CFIT was exceedingly common in before modern aviation innovations like GPS, radar, and collision warning systems, and has caused over 9,000 fatalities since the beginning of flight. CFIT can be caused by low visibility, but it is also commonly caused by human error factors, like distracted crew.[^3] In 1972, Eastern Air Lines 401 crashed into the Florida Everglades, killing 99 people, due to crew fixation on a burned-out lightbulb in the instrumentation of the nose gear.
+An example of this is CFIT (controlled flight into terrain), which is type of crash in which a plane crashes into landscape or buildings. CFIT was exceedingly common in before modern aviation innovations like GPS, radar, and collision warning systems, and has caused over 9,000 fatalities since the beginning of flight. CFIT can be caused by low visibility, but it is also commonly caused by human error factors, like distracted crew.<sup name="a3">[3](#f3)</sup>  In 1972, Eastern Air Lines 401 crashed into the Florida Everglades, killing 99 people, due to crew fixation on a burned-out lightbulb in the instrumentation of the nose gear.
 
 When we look at crash distribution throughout the history of aviation, we can get a bigger picture. Rises in crash numbers correspond to increases in the frequency and number of flights as technology improves, and economic and political factors change with time. Increases in crashes after 1945, for example, correspond to the boom in commercial aviation as WWII ended and newly-developed four-engine aircraft become available for non-military use.
 
 ![][3]
 
-Several important technological and regulatory innovations in the industry are credited with increasing safety, primarily the implementation of navigational and flights aids such as radio positioning and GPS, and technological and materials improvements allowing for better fire safety and other technical improvements to aircraft. Crew Resource Management (CRM), is a human-error and threat-response risk-mitigation system that was first theorized in the 1970s as a result of analysis of crashes like Eastern Air Lines 401. Unfortunately, CRM was not widely adopted until the early 1990s, largely due to the low buy-in of flight crews and crew adherence to traditionalist ideas of cockpit hierarchy. Studies in the 1980s showed that up to 70% of all aircraft accidents were escalated or caused by human factors, rather than pure mechanical failure.\[2\] The enforced regulation of CRM training and industry-wide buy-into CRM techniques due to the heroic actions of the United 232 crew are widely credited with the decline in aircraft crashes in the 1990s. [^4]
+Several important technological and regulatory innovations in the industry are credited with increasing safety, primarily the implementation of navigational and flights aids such as radio positioning and GPS, and technological and materials improvements allowing for better fire safety and other technical improvements to aircraft. Crew Resource Management (CRM), is a human-error and threat-response risk-mitigation system that was first theorized in the 1970s as a result of analysis of crashes like Eastern Air Lines 401. Unfortunately, CRM was not widely adopted until the early 1990s, largely due to the low buy-in of flight crews and crew adherence to traditionalist ideas of cockpit hierarchy. Studies in the 1980s showed that up to 70% of all aircraft accidents were escalated or caused by human factors, rather than pure mechanical failure.\[2\] The enforced regulation of CRM training and industry-wide buy-into CRM techniques due to the heroic actions of the United 232 crew are widely credited with the decline in aircraft crashes in the 1990s. <sup name="a4">[4](#f4)</sup>
 
 Despite all these changes, a glimpse at just this graph and the total number of annual crashes makes it appear as though planes are still as dangerous now as they were in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the Plane Crash dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
 
@@ -61,28 +61,32 @@ We can get a closer look at technological and regulatory improvements to aviatio
 
 \[\[percent line y graph\]\] ![][6]
 
-FMS, or flight management systems, are essentially what a layman would consider to be autopilot technology. A plane's FMS may calculate everything from elevation, flightpath, engine power levels, wing flap orientations, etc. FMS systems in 2020 are even more complex, calculating precise instrumentation levels, and location data for the entirety of the flight trip.[^5]
+FMS, or flight management systems, are essentially what a layman would consider to be autopilot technology. A plane's FMS may calculate everything from elevation, flightpath, engine power levels, wing flap orientations, etc. FMS systems in 2020 are even more complex, calculating precise instrumentation levels, and location data for the entirety of the flight trip.<sup name="a5">[5](#f5)</sup>
 
 Traffic Alert and Collision Avoidance Systems (TACS II+) use radio signaling to give pilots warnings about objects in their flightpath. This technology helps avoid midair collision and help pilots coordinate with air traffic control for safe takeoff, landing, and taxiing at airports.
 
-Regulations such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandated certain minimum periods of rest be provided to pilots and crew between flights.[^6]
+Regulations such as 14 CFR 117 placed a limit on the number of total and consecutive hours that a pilot can fly in certain periods of time, such as within 48hrs or a week. These regulations also mandated certain minimum periods of rest be provided to pilots and crew between flights.<sup name="a5">[5](#f5)</sup>
 
 **Conclusion**
+
 
 No endeavor is ever 100% safe. But flight has never been safer than it is today. In fact, such safety rates are a pinnacle of human innovation and achievement.
 
 **Sources:**
-<b name="f1">1</b> Ponton, L. \"Understanding the Fear of Flying.\" *Psych Central*. https://psychcentral.com/lib/understanding-the-fear-of-flying/ (retrieved March, 2020). [↩](#a1)
 
-[^2]: Wiener, Kanki, and Helmreich. *Cockpit Resource Management*. San Diego, CA: Acad. Press, 1995.
 
-[^3]: Kelly, and Efthymiou. "An Analysis of Human Factors in Fifty Controlled Flight into Terrain Aviation Accidents from 2007 to 2017." *Journal of Safety Research* (March 2019): 155--65. https://doi.org/10.1016/j.jsr.2019.03.009.
 
-[^4]: Helmreich, Merritt, and Wilhelm. 1999. "The Evolution of Crew Resource Management Training in Commercial Aviation." *The International Journal of Aviation Psychology* 9 (1): 19--32. doi:10.1207/s15327108ijap0901\_2.
+<b name="f1">1 - </b> Ponton, L. \"Understanding the Fear of Flying.\" *Psych Central*. https://psychcentral.com/lib/understanding-the-fear-of-flying/ (retrieved March, 2020). [↩](#a1)
 
-[^5]: Miller, et al. (2009). \"Contribution of Flight Systems to Performance-Based Navigation\". *AERO Magazine* (34, Qtr. 2).
+<b name="f2">2 - </b>  Wiener, Kanki, and Helmreich. *Cockpit Resource Management*. San Diego, CA: Acad. Press, 1995.[↩](#a2)
 
-[^6]: Rudari, Lukas, Johnson, Geske, and Sperlak. "Pilot Perceptions on Impact of Crew Rest Regulations on Safety and Fatigue." *International Journal of Aviation, Aeronautics, and Aerospace*, February 19, 2016. https://doi.org/10.15394/ijaaa.2016.1096.
+<b name="f3">3 - </b>  Kelly, and Efthymiou. "An Analysis of Human Factors in Fifty Controlled Flight into Terrain Aviation Accidents from 2007 to 2017." *Journal of Safety Research* (March 2019): 155--65. https://doi.org/10.1016/j.jsr.2019.03.009.[↩](#a3)
+
+<b name="f4">4 - </b> Helmreich, Merritt, and Wilhelm. 1999. "The Evolution of Crew Resource Management Training in Commercial Aviation." *The International Journal of Aviation Psychology* 9 (1): 19--32. doi:10.1207/s15327108ijap0901\_2.[↩](#a4)
+
+<b name="f5">5 - </b> Miller, et al. (2009). \"Contribution of Flight Systems to Performance-Based Navigation\". *AERO Magazine* (34, Qtr. 2).[↩](#a5)
+
+<b name="f6">6 - </b> Rudari, Lukas, Johnson, Geske, and Sperlak. "Pilot Perceptions on Impact of Crew Rest Regulations on Safety and Fatigue." *International Journal of Aviation, Aeronautics, and Aerospace*, February 19, 2016. https://doi.org/10.15394/ijaaa.2016.1096.[↩](#a6)
 
   [1]: img/plane/pie.png
   [2]: img/plane/bar.png
