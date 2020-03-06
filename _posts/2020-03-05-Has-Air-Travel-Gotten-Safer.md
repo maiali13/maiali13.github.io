@@ -13,7 +13,7 @@ published: true
 
 I have a massive fear of flying.
 
-I'm not alone: up to 30% of the population have the same fears, with between 2-10% of people possessing a phobia of flying. Many people overestimate the likelihood of catastrophic events, and/or are misinformed about the dangers of air travel, which contribute to anxiety about flight or even the development of aviophobia.\[1\]
+I'm not alone: up to 30% of the population have the same fears, with between 2-10% of people possessing a phobia of flying. Many people overestimate the likelihood of catastrophic events, and/or are misinformed about the dangers of air travel, which contribute to anxiety about flight or even the development of aviophobia.<sup name="a1">[1](#f1)</sup>
 
 But whether you have family all over the world or demanding career, sometimes you just can't avoid air travel. In our busy, interconnected world, flying is practically a necessity. Despite my best efforts, I seem to manage to take at least one intercontinental round trip and several domestic flights every year. But still, every time I board a plane, I sweat and fidget until well after reaching cruising altitude. Every minor turbulent bump gives me flashes of panic. Landing makes my knees weak. And to compound all this, my own fear has led me to have a morbid fascination with plane crashes.
 
@@ -72,8 +72,7 @@ Regulations such as 14 CFR 117 placed a limit on the number of total and consecu
 No endeavor is ever 100% safe. But flight has never been safer than it is today. In fact, such safety rates are a pinnacle of human innovation and achievement.
 
 **Sources:**
-
-[^1]: Ponton, L. \"Understanding the Fear of Flying.\" *Psych Central*. https://psychcentral.com/lib/understanding-the-fear-of-flying/ (retrieved March, 2020).
+<b name="f1">1</b> Ponton, L. \"Understanding the Fear of Flying.\" *Psych Central*. https://psychcentral.com/lib/understanding-the-fear-of-flying/ (retrieved March, 2020). [↩](#a1)
 
 [^2]: Wiener, Kanki, and Helmreich. *Cockpit Resource Management*. San Diego, CA: Acad. Press, 1995.
 
