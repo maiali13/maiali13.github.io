@@ -73,17 +73,17 @@ No endeavor is ever 100% safe. But flight has never been safer than it is today.
 
 **Sources:**
 
-[^1] Ponton, L. \"Understanding the Fear of Flying.\" *Psych Central*. https://psychcentral.com/lib/understanding-the-fear-of-flying/ (retrieved March, 2020).
+[^1]: Ponton, L. \"Understanding the Fear of Flying.\" *Psych Central*. https://psychcentral.com/lib/understanding-the-fear-of-flying/ (retrieved March, 2020).
 
-[^2] Wiener, Kanki, and Helmreich. *Cockpit Resource Management*. San Diego, CA: Acad. Press, 1995.
+[^2]: Wiener, Kanki, and Helmreich. *Cockpit Resource Management*. San Diego, CA: Acad. Press, 1995.
 
-[^3] Kelly, and Efthymiou. "An Analysis of Human Factors in Fifty Controlled Flight into Terrain Aviation Accidents from 2007 to 2017." *Journal of Safety Research* (March 2019): 155--65. https://doi.org/10.1016/j.jsr.2019.03.009.
+[^3]: Kelly, and Efthymiou. "An Analysis of Human Factors in Fifty Controlled Flight into Terrain Aviation Accidents from 2007 to 2017." *Journal of Safety Research* (March 2019): 155--65. https://doi.org/10.1016/j.jsr.2019.03.009.
 
-[^4] Helmreich, Merritt, and Wilhelm. 1999. "The Evolution of Crew Resource Management Training in Commercial Aviation." *The International Journal of Aviation Psychology* 9 (1): 19--32. doi:10.1207/s15327108ijap0901\_2.
+[^4]: Helmreich, Merritt, and Wilhelm. 1999. "The Evolution of Crew Resource Management Training in Commercial Aviation." *The International Journal of Aviation Psychology* 9 (1): 19--32. doi:10.1207/s15327108ijap0901\_2.
 
-[^5] Miller, et al. (2009). \"Contribution of Flight Systems to Performance-Based Navigation\". *AERO Magazine* (34, Qtr. 2).
+[^5]: Miller, et al. (2009). \"Contribution of Flight Systems to Performance-Based Navigation\". *AERO Magazine* (34, Qtr. 2).
 
-[^6] Rudari, Lukas, Johnson, Geske, and Sperlak. "Pilot Perceptions on Impact of Crew Rest Regulations on Safety and Fatigue." *International Journal of Aviation, Aeronautics, and Aerospace*, February 19, 2016. https://doi.org/10.15394/ijaaa.2016.1096.
+[^6]: Rudari, Lukas, Johnson, Geske, and Sperlak. "Pilot Perceptions on Impact of Crew Rest Regulations on Safety and Fatigue." *International Journal of Aviation, Aeronautics, and Aerospace*, February 19, 2016. https://doi.org/10.15394/ijaaa.2016.1096.
 
   [1]: img/plane/pie.png
   [2]: img/plane/bar.png
