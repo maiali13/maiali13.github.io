@@ -68,7 +68,9 @@ As the data illustrates, the total number of crashes is slowly decreasing, while
 
 We can get a closer look at technological and regulatory improvements to aviation safety by comparing important dates with crash rate over time.
 
-\[\[percent line y graph\]\] ![][6]
+<p align="center">
+  <img src="https://github.com/maiali13/maiali13.github.io/blob/master/img/plane/line.png">
+</p>
 
 FMS, or flight management systems, are essentially what a layman would consider to be autopilot technology. A plane's FMS may calculate everything from elevation, flightpath, engine power levels, wing flap orientations, etc. FMS systems in 2020 are even more complex, calculating precise instrumentation levels, and location data for the entirety of the flight trip.<sup name="a5">[5](#f5)</sup>
 
