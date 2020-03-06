@@ -57,9 +57,8 @@ To get a more detailed picture of plane crash probabilities, We can use data fro
 
 Now using this data, we can see directly how the number of flights has increased and the number of crashes decreased in the modern era of aviation (1970-present).
 
-\[double y axis graph\]
 
-\[double y axis graph\]
+![alt-text-1](img/plane/line1.png "title-1") ![alt-text-2](img/plane/line2.png "title-2")
 
 
 As the data illustrates, the total number of crashes is slowly decreasing, while the total number of worldwide flights is increasing.
