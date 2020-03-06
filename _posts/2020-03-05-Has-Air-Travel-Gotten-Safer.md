@@ -38,7 +38,6 @@ Commercial flights, which are primarily passenger aircraft, make up 76% of total
 Further exploration of this dataset reveals that we can break down the summaries of crash incidents to see what is causing them. Of all crashes throughout history, weather and visibility were the leading cause of aircraft crashes, followed by mechanical failure. Fire in the cabin led to 18% of crashes, while violence including hijacking or shooting down of aircraft resulted in less than 2% of all crashes. Pure pilot error resulted in 5%. However, it is worth noting that studies in aviation have led to the realization that a large percentage of crashes, while not directly caused by human error factors, were escalated from mitigatable issues into crashes by human error.<sup name="a2">[2](#f2)</sup>
 
 <img align="right" width="500" height="310" src="https://github.com/maiali13/maiali13.github.io/blob/master/img/plane/EA401.jpg">
-
 An example of this is CFIT (controlled flight into terrain), which is type of crash in which a plane crashes into landscape or buildings. CFIT was exceedingly common in before modern aviation innovations like GPS, radar, and collision warning systems, and has caused over 9,000 fatalities since the beginning of flight. CFIT can be caused by low visibility, but it is also commonly caused by human error factors, like distracted crew.<sup name="a3">[3](#f3)</sup>  In 1972, Eastern Air Lines 401 crashed into the Florida Everglades, killing 99 people, due to crew fixation on a burned-out lightbulb in the instrumentation of the nose gear.
 
 
