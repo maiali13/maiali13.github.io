@@ -62,7 +62,7 @@ To get a more detailed picture of plane crash probabilities, we can use data fro
 
 <p align="center">
   <img src="/img/plane/line1.png" />
-  <img src="/img/plane/line2.png" />
+  <img src="/img/plane/line2edit.png" />
 </p>
 
 As the above graphs illustrate, the total number of crashes is slowly decreasing, while the total number of worldwide flights is increasing, resulting in an ever-shrinking crash percentage. 
