@@ -17,7 +17,7 @@ And, I'm not alone: up to 30% of the population have the same fears, with betwee
 
 But whether you have family all over the world or demanding career, sometimes you just can't avoid air travel. In our busy, interconnected world, flying is practically a necessity. Despite my best efforts, I seem to manage to take at least one intercontinental round trip and several domestic flights every year. But still, every time I board a plane, I sweat and fidget until well after reaching cruising altitude. Every minor turbulent bump leaves me shaking in my seat. Landing makes me queasy. And to compound all this, my own fear has led me to have a morbid fascination with plane crashes.
 
-I decided to look at data on airplane crashes to try and better understand the reality of flight. How have trends in accidents changed over time? Hopefully, this investigation will help me banish my anxiety once and for all.
+I decided to look at data on airplane crashes to try and better understand the realities of air travel. How have trends in aircraft accidents changed over time? Hopefully, this investigation will help me banish my anxiety once and for all.
 
 Using data from [planecrashinfo.com](<http://www.planecrashinfo.com/database.htm> "planecrashinfo.com"), we can investigate plane crashes over the last 111 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
 
