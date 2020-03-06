@@ -19,7 +19,7 @@ But whether you have family all over the world or demanding career, sometimes yo
 
 I decided to look at data on airplane crashes to try and better understand the reality of flight. How have trends in these accidents changed over time? Which aircraft carriers or planes are the most dangerous? Hopefully, this investigation will help me banish my anxiety once and for all.
 
-Using data from planecrashinfo.com (<http://www.planecrashinfo.com/database.htm>), we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
+Using data from (planecrashinfo.com)[<http://www.planecrashinfo.com/database.htm>,"planecrashinfo.com"], we can investigate plane crashes over the last 101 years, from 1908 to 2019. This dataset includes all fatal civil and commercial aviation accidents, and all fatal, non-conflict military aviation accidents.
 
 \[pie chart\]
 
@@ -45,7 +45,7 @@ Several important technological and regulatory innovations in the industry are c
 
 Despite all these changes, a glimpse at just this graph and the total number of annual crashes makes it appear as though planes are still as dangerous now as they were in the 1940s. My intuition tells me that this can't quite be right. These ratios might be due to the ever-increasing volume of commercial flights. Unfortunately, the Plane Crash dataset doesn't include any information about air traffic over time to make better inferences about crash probabilities.
 
-To get a more detailed picture of plane crash probabilities, We can use data from the World Bank on total number of flights from 1970-2018 (<https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false>).
+To get a more detailed picture of plane crash probabilities, We can use data from (the World Bank)[ <https://data.worldbank.org/indicator/IS.AIR.DPRT?most_recent_year_desc=false>, "World Bank"] on total number of flights from 1970-2018.
 
 Now using this data, we can see directly how the number of flights has increased and the number of crashes decreased in the modern era of aviation (1970-present).
 
