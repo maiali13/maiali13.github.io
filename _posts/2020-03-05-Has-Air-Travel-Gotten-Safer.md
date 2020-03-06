@@ -61,7 +61,6 @@ Now using this data, we can see directly how the number of flights has increased
 
 \[double y axis graph\]
 
-![][4]![][5]
 
 As the data illustrates, the total number of crashes is slowly decreasing, while the total number of worldwide flights is increasing.
 
