@@ -101,4 +101,4 @@ No endeavor is ever 100% risk-free. But flight has never been safer than it is t
 
 <b name="f6">6 - </b> Rudari, Lukas, Johnson, Geske, and Sperlak. "Pilot Perceptions on Impact of Crew Rest Regulations on Safety and Fatigue." *International Journal of Aviation, Aeronautics, and Aerospace*, February 19, 2016. https://doi.org/10.15394/ijaaa.2016.1096. [↩](#a6)
 
-The jupityer notebook used to prepare and visualize the data and can accessed at [this]() Github repository.
+The jupityer notebook used to prepare and visualize the data and can accessed at [this](<https://github.com/maiali13/DS13-Unit1-Build> "maiali13") Github repository.
