@@ -37,7 +37,7 @@ Commercial flights, which are primarily passenger aircraft, make up 76% of total
 </p>
 
 
-Further exploration of this dataset reveals that we can break down the summaries of crash incidents to see what is causing them. Of all crashes throughout history, weather and visibility were the leading cause of aircraft crashes, followed by mechanical failure. Fire in the cabin led to 18% of crashes, while violence including hijacking or shooting down of aircraft resulted in less than 2% of all crashes. Pure pilot error resulted in 5%. However, it is worth noting that studies in aviation have led to the realization that a large percentage of crashes, while not directly caused by human error factors, were escalated from mitigatable issues into crashes by human error.<sup name="a2">[2](#f2)</sup>
+Further exploration of this dataset reveals that we can break down the summaries of crash incidents to see what is causing them. Of all incidents throughout history, weather and visibility were the leading cause of aircraft crashes, followed by mechanical failure. Fire in the cabin led to 18% of crashes, while violence including hijacking or the shooting down of the aircraft resulted in less than 2% of all crashes. Pure pilot error resulted in 5%. However, it is worth noting that studies in aviation have led to the realization that a large percentage of crashes, while not directly caused by human error factors, were escalated from mitigatable issues into crashes by human error.<sup name="a2">[2](#f2)</sup>
 
 <img align="right" width="500" height="310" src="/img/plane/EA401.jpg" />
 
