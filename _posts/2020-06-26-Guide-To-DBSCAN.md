@@ -39,7 +39,7 @@ In science, possibly the most common clustering algorithm is K-Means, the simple
   <img src="/img/ML/kmeans_convergence.gif" width=400/>
 </p>
 
-K-Means requires the input of *k* , the number of clusters in the dataset. The algorithm will then:
+K-Means requires the parameter *k* , the number of clusters in the dataset. The algorithm will then:
 - initialize the number of *k* centroids at random within the dataset,
 - assign each datapoint in the dataset to one of the *k* clusters,
 - measure the “nearness” of each datapoint to the clusters, 
@@ -80,8 +80,15 @@ Additionally, when describing DBSCAN clusters, several terms are important:
   <img src="/img/ML/DBSCAN_cluster.png" />
 </p>
 
-Each cluster within the data consists of these core points (red) and border points (green). Core points have at least min_points (minPts) in their epsilon neighborhood (N ε), whereas border points have less than min_points in their N ε, but are inside the N ε of a core point. Points that are outside the N ε of every core point within the data, and have less than min_points in their N ε, are considered noise (blue).<sup name="a5">[5](#f5)</sup>
+As illustrated in the above image, each cluster within the data consists of these core points (red) and border points (green). Core points have at least min_points (minPts) in their epsilon neighborhood (N ε), whereas border points have less than min_points in their N ε, but are inside the N ε of a core point. Points that are outside the N ε of every core point within the data, and have less than min_points in their N ε, are considered noise (blue).<sup name="a5">[5](#f5)</sup>
 
+
+So, DBSCAN requires two parameters epsilon (ε) and min_samples, which determine cluster density. The algorithm will then:
+- arbitrarily select the point (*p*)
+- determine which points are neighbors of *p* using the parameters ε and min_samples,
+- create a new cluster areound set *p* and its neighbors if it is a "core point",
+- visit the next point in the dataset if *p* is a border point or noise
+These steps will repeat until all points in the dataset have been processed. 
 
 Now that we have a basic understanding of DBSCAN, lets code it from scratch!
 
@@ -105,8 +112,6 @@ class DBSCAN:
   min_samples: (int, default=5)
   the number of samples within a point's nighborhood required for it to be 
   weighted as a core point for clustering
-  
-  (these two parameters determine cluster density)
   """
   def  __init__(self, eps=0.5, min_samples=5):
     self.eps = eps
