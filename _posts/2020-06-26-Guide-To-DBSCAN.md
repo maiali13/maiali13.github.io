@@ -69,9 +69,11 @@ Comparison of K-Means (above) vs DBSCAN (below) on two different datasets: note 
 
 DBSCAN implementation depends on two parameters to determine sample density.<sup name="a4">[4](#f4)</sup> First, a natural number, **"min_samples"**, the minimum number of datapoints within the epsilon neighborhood from a single datapoint. This value serves as the threshold for how many points must be around a “core point” in order for the neighborhood to be considered a cluster. Generally, a min_samples value of ≤ 3 is not productive. Larger values work better for larger datasets, and so min_samples should scale somewhat with the size of the data. Too large of a min_sample value will result in an overly smooth density estimate. The scientist typically uses their domain knowledge to estimate what a good min_sample value for the dataset is. 
 
+<img align="right" width="180" height="75" src="https://latex.codecogs.com/gif.latex?d%5Cleft%28%20x%2Cy%5Cright%29%20%3D%20%5Csqrt%20%7B%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cleft%28%20y_%7Bi%7D-x_%7Bi%7D%5Cright%29%5E2%20%7D" />
+
 Second, **ε, epsilon** -abbreviated to "eps"- the radius from any datapoint used to calculate each point’s neighbors. The simplest and most commonplace technique used is euclidian distance (above right). 
 
-<img align="center" width="180" height="75" src="https://latex.codecogs.com/gif.latex?d%5Cleft%28%20x%2Cy%5Cright%29%20%3D%20%5Csqrt%20%7B%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cleft%28%20y_%7Bi%7D-x_%7Bi%7D%5Cright%29%5E2%20%7D" />
+
 
 Additionally, when describing DBSCAN clusters, several terms are important:
 - “core point”: point (*p*) is a core point if at least min_samples (minPts) points are within distance N(p) = { p ∈ Data | dist(p, q) ≤ ε} of it (including p).
