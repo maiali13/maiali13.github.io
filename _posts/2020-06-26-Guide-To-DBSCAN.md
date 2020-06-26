@@ -82,12 +82,12 @@ As illustrated in the image to the left, where DBSCAN(eps= ε, min_samples= 3), 
 
 
 So, to break it down, DBSCAN requires two parameters epsilon (ε), and min_samples, which determine cluster density. Once these parameters are set, the algorithm will:
-- arbitrarily select the point (*p*)
+- arbitrarily select point (*p*)
 - determine which points are neighbors of *p* using the parameters ε and min_samples,
-- create a new cluster around *p* and its neighbors if it is a "core point",
-- visit the next point in the dataset if *p* is a border point or noise
+- create a new cluster around *p* and its neighbors if it is a "core point" (N ε ≥ min_samples),
+- visit the next point in the dataset, mark *p* as a border point (ε ≤ N ε) or noise (ε ≥ N ε aka no/few nearby points)
 
-These steps will repeat until all points in the dataset have been processed. 
+These steps will repeat, expanding and finding new clusters until all points in the dataset have been processed. 
 
 Now that we have a basic understanding of DBSCAN, lets code it from scratch!
 
@@ -194,13 +194,13 @@ Cool! Lets compare our algorithm to the "official" [Sci-Kit Learn version](<http
   <img src="/img/ML/sklearn_DBSCAN_blobs.png" />
 </p>
 
-Our DBSCAN from scratch algorithm is a faithful remake! These graphs show how DBSCAN perfroms beautifully on denser, irregular data, but is less successful as the number of clusters increase and become less dense. 
+Our DBSCAN from scratch algorithm is a faithful remake! These graphs show how DBSCAN perfroms beautifully on denser, irregularly-shaped data, but is less successful as the number of clusters increase and become less dense. 
 
 ## Use Cases
 
 DBSCAN is at its weakest when the clusters within the data vary highly in density, making it impossible to find a decent epsilon value for the entire dataset, since the ideal epsilon value for each cluster would vary similarly.  And, like most machine learning algorithms, DBSCAN suffers greatly from the “curse of dimensionality”, where clustering capabilities are weakened as the number of dimensions increase and the concept of distance becomes less meaningful.
-Despite these drawbacks, DBSCAN has been incredibly useful in practice and is regularly applied in research across industry and several scientific fields. Biomedical research and medical imaging, recommendation engines and search result analysis, market research, and studies that require image preprocessing all use variations of DBSCAN machine learning algorithms. [Netflix](<https://netflixtechblog.com/tracking-down-the-villains-outlier-detection-at-netflix-40360b31732> "Netflix") used DBSCAN’s effective outlier detection on its server metrics to find the causes of service outages. 
 
+Despite these drawbacks, DBSCAN has been incredibly useful in practice and is regularly applied in research across industry and several scientific fields. [Netflix](<https://netflixtechblog.com/tracking-down-the-villains-outlier-detection-at-netflix-40360b31732> "Netflix") used DBSCAN’s effective outlier detection on its server metrics to find the causes of service outages. Biomedical research and medical imaging, recommendation engines and search result analysis, market research, and studies that require image preprocessing all use variations of DBSCAN machine learning algorithms. 
 
 
 
