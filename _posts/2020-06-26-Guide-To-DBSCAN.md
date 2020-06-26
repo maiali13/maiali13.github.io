@@ -84,36 +84,36 @@ class DBSCAN:
     self.clabels = np.zeros(n_points, dtype=int)  # define empty label list
     
     for y in  range(n_points):  #for each point in our input data, do the following:
-      if  self.clabels[y] != 0:  # if it alraedy has a label, skip
+        if  self.clabels[y] != 0:  # if it alraedy has a label, skip
+          continue
+
+      neighbors = self.get_neighbors(X, y)  #find neighbors
+
+      if  len(neighbors) < self.min_samples:  # if the number of neighboring points is less than min_samples (aka not densley surrounded)
+        self.clabels[y] = -1  # label that point as noise
         continue
-    
-    neighbors = self.get_neighbors(X, y)  #find neighbors
 
-    if  len(neighbors) < self.min_samples:  # if the number of neighboring points is less than min_samples (aka not densley surrounded)
-      self.clabels[y] = -1  # label that point as noise
-      continue
+      # when data point isnt noise
+      C += 1  # move onto the next cluster label
+      self.clabels[y] = C # assign new cluster label
 
-    # when data point isnt noise
-    C += 1  # move onto the next cluster label
-    self.clabels[y] = C # assign new cluster label
+    # for each point not yes considerd:
+    # determine points and their unclaimed neighbors
+    i = 0
+    while i < len(neighbors):
+      neighbor_y = int(neighbors[i])  # creating a new cluster
 
-# for each point not yes considerd:
-# determine points and their unclaimed neighbors
-i = 0
-while i < len(neighbors):
-  neighbor_y = int(neighbors[i])  # creating a new cluster
+      if  self.clabels[neighbor_y] == -1:  # label new sparse points as noise
+        self.clabels[neighbor_y] = C
 
-  if  self.clabels[neighbor_y] == -1:  # label new sparse points as noise
-    self.clabels[neighbor_y] = C
+      elif  self.clabels[neighbor_y] == 0:  # skip if already labelled/processed, otherwise add to cluster
+        self.clabels[neighbor_y] = C
+        new_neighbors = self.get_neighbors(X, neighbor_y)  # get neighbors of point
 
-  elif  self.clabels[neighbor_y] == 0:  # skip if already labelled/processed, otherwise add to cluster
-    self.clabels[neighbor_y] = C
-    new_neighbors = self.get_neighbors(X, neighbor_y)  # get neighbors of point
-    
-    if  len(new_neighbors) >= self.min_samples:  # if the number of neighboring points is higher than min_samples (aka densley surrounded)
-      neighbors = np.append(neighbors, new_neighbors)  # exand the cluster with the newly found neighbors
+        if  len(new_neighbors) >= self.min_samples:  # if the number of neighboring points is higher than min_samples (aka densley surrounded)
+          neighbors = np.append(neighbors, new_neighbors)  # exand the cluster with the newly found neighbors
 
-  i += 1  # iterate on for all remaining unconsidered points
+      i += 1  # iterate on for all remaining unconsidered points
 ```
 
 <p align="left">
