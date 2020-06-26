@@ -35,11 +35,10 @@ Essentially what unsupervised learning algorithms attempt to do is to find the u
 
 In science, possibly the most common clustering algorithm is K-Means, the simplest clustering algorithm used in statistical data analysis. First proposed in the 1950s, its age and ease of use have led to its near ubiquity.<sup name="a1">[1](#f1)</sup> Today there are dozens of variations and improvements on the K-Means algorithm, however the naïve K-Means remains an effective and popular choice.<sup name="a2">[2](#f2)</sup>  K-Means works simply by dividing the data into the number of clusters k, in which the datapoints share a mean distance to the “centroid” (central point) of the cluster. 
 
-<p align="right">
+<p align="center">
   <img src="/img/ML/kmeans_convergence.gif" width=400/>
 </p>
 
-<div dir="rtl">
 K-Means requires the input of k , the number of clusters in the dataset. The algorithm will then:
 - initialize the number of k centroids at random within the dataset,
 - assign each datapoint in the dataset to one of the k clusters,
@@ -47,15 +46,12 @@ K-Means requires the input of k , the number of clusters in the dataset. The alg
 - recalculate each cluster’s centroid as a mean of the distance of datapoints assigned to it.
 
 These last three steps repeat until the algorithm converges, as seen in the above gif. 
-</div>
 
 Despite its effectivity and ease of use, K-Means has several significant disadvantages. First, one must know or find the optimal number of clusters (k). K-Means is very sensitive to this parameter and will be rendered effectively useless without its optimization. Second, K-Means iterates repeatedly until all clusters are equal in size no matter the distribution of the data. Finally, K-Means doesn’t consider the density of datapoints, and does not recognize outliers. For these reasons, it is not suitable for discovering clusters that are not ellipsoid in shape.
 
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to solve some of the shortcomings of K-Means by clustering datapoints based on density, effectively ignoring “sparse” sections of data by labelling them as noise. This allows it to work robustly with “noisy” datasets, both for identifying clusters and for efficiently identifying the outliers. DBSCAN’s focus on density instead of mean distance results in efficient modeling of non-ellipsoid structures in the data because it allows clusters to take an irregular shape, which is often more representative of organic data. 
 
-<p align="center">
 Comparison of K-Means (top) vs DBSCAN (below) on two different datasets: note that the K-Means does not recognize outliers and non-ellipsoid shaped clusters.
-</p>
 
 <p align="left">
   <img src="/img/ML/KMEANS_example.png" width="1100" />
