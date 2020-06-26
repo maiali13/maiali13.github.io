@@ -69,23 +69,23 @@ Comparison of K-Means (above) vs DBSCAN (below) on two different datasets: note 
 
 DBSCAN implementation depends on two parameters to determine sample density.<sup name="a4">[4](#f4)</sup> First, a natural number, **"min_samples"**, the minimum number of datapoints within the epsilon neighborhood from a single datapoint. This value serves as the threshold for how many points must be around a “core point” in order for the neighborhood to be considered a cluster. Generally, a min_samples value of ≤ 3 is not productive. Larger values work better for larger datasets, and so min_samples should scale somewhat with the size of the data. Too large of a min_sample value will result in an overly smooth density estimate. The scientist typically uses their domain knowledge to estimate what a good min_sample value for the dataset is. 
 
-Second, **ε, epsilon** -abbreviated to "eps"- the radius from any datapoint used to calculate each point’s neighbors. The simplest and most commonplace technique used is euclidian distance (above right).
+Second, **ε, epsilon** -abbreviated to "eps"- the radius from any datapoint used to calculate each point’s neighbors. The simplest and most commonplace technique used is euclidian distance (above right). 
 
 Additionally, when describing DBSCAN clusters, several terms are important:
-- “core point”: point (*p*) is a core point if at least min_samples (minPts) points are within distance ε of it (including p)
-- “border point”: points which are “reachable” from core point *p*. They are still part of their cluster because they are within the epsilon neighborhood (N ε) of a core point, but do not meet the criteria set in min_points.
-- “noise”: outliers 
+- “core point”: point (*p*) is a core point if at least min_samples (minPts) points are within distance N(p) = { p ∈ Data | dist(p, q) ≤ ε} of it (including p).
+- “border point”: points which are “reachable” from core point *p*. They are still part of their cluster because they are within the epsilon neighborhood (N(p)) of a core point, but do not meet the criteria set in min_points.
+- “noise”: outliers, points with no or few nearby points.
 
 <img align="left" width="530" height="310" src="/img/ML/DBSCAN_cluster.png" width="360"/>
 
-As illustrated in the image to the left, where DBSCAN(eps= ε, min_samples= 3), each cluster within the dataset consists of core points (red), and border points (green). Core points contain at least min_points (minPts) in their epsilon neighborhood (N ε), whereas border points contain less than min_points in their N ε. However, border points are still inside the N ε of a core point, and therefore in a cluster. Points which are outside the N ε of every core point within the data, *and* have less than min_points in their N ε, are considered noise (blue), and not within any cluster.<sup name="a5">[5](#f5)</sup>
+As illustrated in the image to the left, where DBSCAN(eps= ε, min_samples= 3), each cluster within the dataset consists of core points (red), and border points (green). Core points contain at least min_points (minPts) in their epsilon neighborhood (N(p)), whereas border points contain less than min_points in their N(p). However, border points are still inside the N(p) of a core point, and therefore in a cluster. Points which are outside the N(p) of every core point within the data, *and* have less than min_points in their N(p), are considered noise (blue), and not within any cluster.<sup name="a5">[5](#f5)</sup>
 
 
 So, to break it down, DBSCAN requires two parameters epsilon (ε), and min_samples, which determine cluster density. Once these parameters are set, the algorithm will:
 - arbitrarily select point (*p*)
 - determine which points are neighbors of *p* using the parameters ε and min_samples,
-- create a new cluster around *p* and its neighbors if it is a "core point" (N ε ≥ min_samples),
-- visit the next point in the dataset, mark *p* as a border point (ε ≤ N ε) or noise (ε ≥ N ε aka no/few nearby points)
+- create a new cluster around *p* and its neighbors if it is a "core point" (N(p) ≥ min_samples),
+- visit the next point in the dataset, mark *p* as a border point (ε ≤ N(p)) or noise (ε ≥ N(p))
 
 These steps will repeat, expanding and finding new clusters until all points in the dataset have been processed. 
 
