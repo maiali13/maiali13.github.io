@@ -36,7 +36,7 @@ Essentially what unsupervised learning algorithms attempt to do is to find the u
 In science, possibly the most common clustering algorithm is K-Means, the simplest clustering algorithm used in statistical data analysis. First proposed in the 1950s, its age and ease of use have led to its near ubiquity.<sup name="a1">[1](#f1)</sup> Today there are dozens of variations and improvements on the K-Means algorithm, however the naïve K-Means remains an effective and popular choice.<sup name="a2">[2](#f2)</sup>  K-Means works simply by dividing the data into the number of clusters k, in which the datapoints share a mean distance to the “centroid” (central point) of the cluster. 
 
 <p align="center">
-  <img src="/img/ML/kmeans_convergence.gif" width="300" />
+  <img src="/img/ML/kmeans_convergence.gif" width="500" />
 </p>
 
 K-Means requires the input of k , the number of clusters in the dataset. The algorithm will then:
@@ -52,16 +52,15 @@ Despite its effectivity and ease of use, K-Means has several significant disadva
 
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to solve some of the shortcomings of K-Means by clustering datapoints based on density, effectively ignoring “sparse” sections of data by labelling them as noise. This allows it to work robustly with “noisy” datasets, both for identifying clusters and for efficiently identifying the outliers. DBSCAN’s focus on density instead of mean distance results in efficient modeling of non-ellipsoid structures in the data because it allows clusters to take an irregular shape, which is often more representative of organic data. 
 
-<p align="justify">
-  
-**Comparison of K-Means (top) vs DBSCAN (below) on two different datasets**
+<p align="center">
+Comparison of K-Means (top) vs DBSCAN (below) on two different datasets
 </p>
 
 <p align="left">
-  <img src="/img/ML/KMEANS_example.png" />
+  <img src="/img/ML/KMEANS_example.png" width="1200" />
 </p>
 <p align="right">
-  <img src="/img/ML/DBSCAN_example.png" />
+  <img src="/img/ML/DBSCAN_example.png" width="1200" />
 </p>
 
 ### DBSCAN
