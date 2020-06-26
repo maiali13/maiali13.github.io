@@ -76,8 +76,8 @@ Additionally, when describing DBSCAN clusters, several terms are important:
 - “border point”: points which are “reachable” from core point *p*. They are still part of their cluster because they are within the epsilon neighborhood (N ε) of a core point, but do not meet the criteria set in min_points.
 - “noise”: outliers 
 
-<p align="left">
-  <img src="img/ML/DBSCAN_cluster.png" width="360"/>
+<p align="right">
+  <img src="/img/ML/DBSCAN_cluster.png" width="360"/>
 </p>
 
 As illustrated in the image to the left, each cluster within the data consists of these core points (red) and border points (green). Core points have at least min_points (minPts) in their epsilon neighborhood (N ε), whereas border points have less than min_points in their N ε, but are inside the N ε of a core point. Points that are outside the N ε of every core point within the data, and have less than min_points in their N ε, are considered noise (blue).<sup name="a5">[5](#f5)</sup>
