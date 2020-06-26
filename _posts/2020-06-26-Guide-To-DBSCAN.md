@@ -35,7 +35,9 @@ Essentially what unsupervised learning algorithms attempt to do is to find the u
 
 In science, possibly the most common clustering algorithm is K-Means, the simplest clustering algorithm used in statistical data analysis. First proposed in the 1950s, its age and ease of use have led to its near ubiquity.<sup name="a1">[1](#f1)</sup> Today there are dozens of variations and improvements on the K-Means algorithm, however the naïve K-Means remains an effective and popular choice.<sup name="a2">[2](#f2)</sup>  K-Means works simply by dividing the data into the number of clusters k, in which the datapoints share a mean distance to the “centroid” (central point) of the cluster. 
 
-![alt text]("https://en.wikipedia.org/wiki/K-means_clustering#/media/File:K-means_convergence.gif)
+<p align="right">
+  <img src="/imgimg/ML/kmeans_convergence.gif" width=450/>
+</p>
 
 K-Means requires the input of k , the number of clusters in the dataset. The algorithm will then:
 - initialize the number of k centroids at random within the dataset,
