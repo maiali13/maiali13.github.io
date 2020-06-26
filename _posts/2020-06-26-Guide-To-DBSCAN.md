@@ -52,7 +52,8 @@ class DBSCAN:
   epsilon; the distance threshold between two points in the same neighborhood
 
   min_samples: (int, default=5)
-  the number of samples within a point's nighborhood required for it to be weighted as a core point for clustering
+  the number of samples within a point's nighborhood required for it to be 
+  weighted as a core point for clustering
   
   (these two parameters determine cluster density)
   """
@@ -62,7 +63,8 @@ class DBSCAN:
 
   def  get_neighbors(self, X, y):
     """
-    finds a point's epsilon neighbors via calculating euclidian distance/L² norm   between the datapoints
+    finds a point's epsilon neighbors via calculating euclidian distance/L² norm 
+    between the datapoints
 
     returns a list of all neighboring points
     """
