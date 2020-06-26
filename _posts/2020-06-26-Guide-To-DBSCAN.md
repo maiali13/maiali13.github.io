@@ -21,7 +21,7 @@ How do you even begin? What can you do to find the underlying structure of the d
 
 In short, answers to these questions boil down to whether or not your data is labeled.  If you’re lucky, you already know about the structure of your data. Congratulations! You can now analyze your data with supervised machine learning. With “supervised” learning, the algorithm can be taught what the correct output for given inputs. The algorithm will then search for patterns in the data corresponding to this information, and can then label new input data. Supervised machine learning algorithms include many of the most common statistical analysis methods, such as linear regression and k-Nearest Neighbors. These methods have been used extensively, and are incredibly useful to science because their performance can be judged by a variety of metrics, like accuracy and precision.
 
-But how can you analyze data that isn’t labelled?  If the input data doesn’t have labels, the machine learning algorithm cannot be taught the desired output, and therefore cannot evaluate the accuracy of its analysis of new data.  Then how can an “unsupervised” model learn? And how can we use it to draw inferences from messy data?
+But how can data that isn’t labeled be analyzed?  If the input data doesn’t have labels, the machine learning algorithm cannot be taught the desired output, and therefore cannot evaluate the accuracy of its analysis of new data.  Then how can an “unsupervised” model learn? And how can it be used to draw inferences from messy data?
 
 It is not always straightforward to find metrics for how useful an unsupervised learning algorithm is, because its performance is highly domain-specific and application-dependent. Like the scientific method itself, unsupervised machine learning takes time, parameter tuning, trial, and error.
 
@@ -33,7 +33,7 @@ Essentially what unsupervised learning algorithms attempt to do is to find the u
 
 ##  Clustering Algorithms
 
-In science, possibly the most common clustering algorithm is K-Means, the simplest clustering algorithm used in statistical data analysis. First proposed in the 1950s, its age and ease of use have led to its near ubiquity.<sup name="a1">[1](#f1)</sup> Today there are dozens of variations and improvements on the K-Means algorithm, however the naïve K-Means remains an effective and popular choice.<sup name="a2">[2](#f2)</sup>  K-Means works simply by dividing the data into the number of clusters k, in which the datapoints share a mean distance to the “centroid” (central point) of the cluster. 
+In science, possibly the most common clustering algorithm is K-Means, the simplest clustering algorithm used in statistical data analysis. First proposed in the 1950s, its age and ease of use have led to its near ubiquity.<sup name="a1">[1](#f1)</sup> Today there are dozens of variations and improvements on the K-Means algorithm, however the naïve K-Means remains effective and popular.<sup name="a2">[2](#f2)</sup>  K-Means works simply by dividing the data into the number of clusters k, in which the datapoints share a mean distance to the “centroid” (central point) of the cluster. 
 
 <p align="center">
   <img src="/img/ML/kmeans_convergence.gif" width=400/>
@@ -47,7 +47,7 @@ K-Means requires the parameter *k* , the number of clusters in the dataset. The 
 
 These last three steps repeat until the algorithm converges, as seen in the above gif. 
 
-Despite its effectivity and ease of use, K-Means has several significant disadvantages. First, one must know or find the optimal number of clusters (*k*). K-Means is very sensitive to this parameter and will be rendered effectively useless without its optimization. Second, K-Means iterates repeatedly until all clusters are equal in size no matter the distribution of the data. Finally, K-Means doesn’t consider the density of datapoints, and does not recognize outliers. For these reasons, it is not suitable for discovering clusters that are not ellipsoid in shape.
+Despite its effectiveness and ease of use, K-Means has several significant disadvantages. First, one must know or find the optimal number of clusters (*k*). K-Means is very sensitive to this parameter and will be rendered effectively useless without its optimization. Second, K-Means iterates repeatedly until all clusters are equal in size no matter the distribution of the data. Finally, K-Means doesn’t consider the density of datapoints, and does not recognize outliers. For these reasons, it is unsuited to discovering clusters that are not ellipsoid in shape.
 
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to solve some of the shortcomings of K-Means by clustering datapoints based on density, effectively ignoring “sparse” sections of data by labelling them as noise. This allows it to work robustly with “noisy” datasets, both for identifying clusters and for efficiently identifying the outliers. DBSCAN’s focus on density instead of mean distance results in efficient modeling of non-ellipsoid structures in the data because it allows clusters to take an irregular shape, which is often more representative of organic data. 
 
@@ -57,7 +57,7 @@ DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to
   <img src="/img/ML/KMEANS_example.png" width="1100" />
 </p>
 
-Comparison of K-Means (top) vs DBSCAN (below) on two different datasets: note that the K-Means does not recognize outliers and non-ellipsoid shaped clusters.
+Comparison of K-Means (above) vs DBSCAN (below) on two different datasets: note that the K-Means does not recognize outliers and non-ellipsoid shaped clusters.
 <p align="right">
   <img src="/img/ML/DBSCAN_example.png" width="1100" />
 </p>
@@ -84,7 +84,7 @@ As illustrated in the image to the left, where DBSCAN(eps= ε, min_samples= 3), 
 So, to break it down, DBSCAN requires two parameters epsilon (ε), and min_samples, which determine cluster density. Once these parameters are set, the algorithm will:
 - arbitrarily select the point (*p*)
 - determine which points are neighbors of *p* using the parameters ε and min_samples,
-- create a new cluster areound set *p* and its neighbors if it is a "core point",
+- create a new cluster around *p* and its neighbors if it is a "core point",
 - visit the next point in the dataset if *p* is a border point or noise
 
 These steps will repeat until all points in the dataset have been processed. 
@@ -173,28 +173,33 @@ class DBSCAN:
 ```
 
 
-Cool! Lets compare our algorithm to the "official" [Sci-Kit Learn version](<https://github.com/scikit-learn/scikit-learn/blob/fd237278e/sklearn/cluster/_dbscan.py#L150> "Sci-Kit Learn DBSCAN"). Our DBSCAN algorithm is displayed to the left, and SK-Learn's to the right.
+Cool! Lets compare our algorithm to the "official" [Sci-Kit Learn version](<https://github.com/scikit-learn/scikit-learn/blob/fd237278e/sklearn/cluster/_dbscan.py#L150> "Sci-Kit Learn DBSCAN"). 
 
-### Custom DBSCAN (above) vs SK-Learn DBSCAN (below)
+
 <p align="center">
   <img src="/img/ML/scratch_DBSCAN.png" />
 </p>
+
+### Custom DBSCAN (above) vs SK-Learn DBSCAN (below)
 <p align="center">
   <img src="/img/ML/sklearn_DBSCAN.png" />
 </p>
-### Custom DBSCAN (above) vs SK-Learn DBSCAN (below)
+
 <p align="center">
   <img src="/img/ML/scratch_DBSCAN_blobs.png" />
 </p>
+
+### Custom DBSCAN (above) vs SK-Learn DBSCAN (below)
 <p align="center">
   <img src="/img/ML/sklearn_DBSCAN_blobs.png" />
 </p>
 
+Our DBSCAN from scratch algorithm is a faithful remake! These graphs show how DBSCAN perfroms beautifully on denser, irregular data, but is less successful as the number of clusters increase and become less dense. 
 
 ## Use Cases
 
 DBSCAN is at its weakest when the clusters within the data vary highly in density, making it impossible to find a decent epsilon value for the entire dataset, since the ideal epsilon value for each cluster would vary similarly.  And, like most machine learning algorithms, DBSCAN suffers greatly from the “curse of dimensionality”, where clustering capabilities are weakened as the number of dimensions increase and the concept of distance becomes less meaningful.
-Despite these drawbacks, DBSCAN has been incredibly useful in practice and is regularly applied in research across industry and several scientific fields. Biomedical research and medical imaging, recommendation engines and search result analysis, market research, and studies that require image preprocessing all use variations of DBSCAN machine learning. [Netflix](<https://netflixtechblog.com/tracking-down-the-villains-outlier-detection-at-netflix-40360b31732> “Netflix”) used DBSCAN’s effective outlier detection on its server metrics to find the causes of service outages. 
+Despite these drawbacks, DBSCAN has been incredibly useful in practice and is regularly applied in research across industry and several scientific fields. Biomedical research and medical imaging, recommendation engines and search result analysis, market research, and studies that require image preprocessing all use variations of DBSCAN machine learning algorithms. [Netflix](<https://netflixtechblog.com/tracking-down-the-villains-outlier-detection-at-netflix-40360b31732> "Netflix") used DBSCAN’s effective outlier detection on its server metrics to find the causes of service outages. 
 
 
 
