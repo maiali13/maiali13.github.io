@@ -39,6 +39,7 @@ In science, possibly the most common clustering algorithm is K-Means, the simple
   <img src="/img/ML/kmeans_convergence.gif" width=400/>
 </p>
 
+<div dir="rtl">
 K-Means requires the input of k , the number of clusters in the dataset. The algorithm will then:
 - initialize the number of k centroids at random within the dataset,
 - assign each datapoint in the dataset to one of the k clusters,
@@ -46,7 +47,7 @@ K-Means requires the input of k , the number of clusters in the dataset. The alg
 - recalculate each cluster’s centroid as a mean of the distance of datapoints assigned to it.
 
 These last three steps repeat until the algorithm converges, as seen in the above gif. 
-
+</div>
 
 Despite its effectivity and ease of use, K-Means has several significant disadvantages. First, one must know or find the optimal number of clusters (k). K-Means is very sensitive to this parameter and will be rendered effectively useless without its optimization. Second, K-Means iterates repeatedly until all clusters are equal in size no matter the distribution of the data. Finally, K-Means doesn’t consider the density of datapoints, and does not recognize outliers. For these reasons, it is not suitable for discovering clusters that are not ellipsoid in shape.
 
