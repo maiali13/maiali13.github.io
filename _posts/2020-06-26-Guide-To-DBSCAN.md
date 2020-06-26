@@ -65,11 +65,13 @@ Comparison of K-Means (above) vs DBSCAN (below) on two different datasets: note 
 
 
 ## DBSCAN
-<img align="right" width="190" height="80" src="https://latex.codecogs.com/gif.latex?d%5Cleft%28%20x%2Cy%5Cright%29%20%3D%20%5Csqrt%20%7B%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cleft%28%20y_%7Bi%7D-x_%7Bi%7D%5Cright%29%5E2%20%7D" />
+
 
 DBSCAN implementation depends on two parameters to determine sample density.<sup name="a4">[4](#f4)</sup> First, a natural number, **"min_samples"**, the minimum number of datapoints within the epsilon neighborhood from a single datapoint. This value serves as the threshold for how many points must be around a “core point” in order for the neighborhood to be considered a cluster. Generally, a min_samples value of ≤ 3 is not productive. Larger values work better for larger datasets, and so min_samples should scale somewhat with the size of the data. Too large of a min_sample value will result in an overly smooth density estimate. The scientist typically uses their domain knowledge to estimate what a good min_sample value for the dataset is. 
 
 Second, **ε, epsilon** -abbreviated to "eps"- the radius from any datapoint used to calculate each point’s neighbors. The simplest and most commonplace technique used is euclidian distance (above right). 
+
+<img align="center" width="180" height="75" src="https://latex.codecogs.com/gif.latex?d%5Cleft%28%20x%2Cy%5Cright%29%20%3D%20%5Csqrt%20%7B%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cleft%28%20y_%7Bi%7D-x_%7Bi%7D%5Cright%29%5E2%20%7D" />
 
 Additionally, when describing DBSCAN clusters, several terms are important:
 - “core point”: point (*p*) is a core point if at least min_samples (minPts) points are within distance N(p) = { p ∈ Data | dist(p, q) ≤ ε} of it (including p).
@@ -105,10 +107,10 @@ class DBSCAN:
   Parameters
   ----------
   eps: (float, default=0.5)
-  epsilon; the distance threshold between two points in the same neighborhood
+  epsilon; the max distance between two points in the same neighborhood
 
   min_samples: (int, default=5)
-  the number of samples within a point's nighborhood required for it to be 
+  the threshold number of samples within a point's nighborhood required for it to be 
   weighted as a core point for clustering
   """
   def  __init__(self, eps=0.5, min_samples=5):
@@ -127,7 +129,7 @@ class DBSCAN:
 
   def  fit(self, X):
     """
-    perform clustering on the dataset
+    perform density-based clustering on the dataset
     returns self
 
     Parameters
@@ -137,13 +139,13 @@ class DBSCAN:
     """
     C = 0  # cluster counter C
     n_points = len(X)  # number of data points
-    self.clabels = np.zeros(n_points, dtype=int)  # define empty label list
+    self.clabels = np.zeros(n_points, dtype=int)  # define empty label list, initially all labels are 0
     
     for y in  range(n_points):  #for each point in our input data, do the following:
-        if  self.clabels[y] != 0:  # if it alraedy has a label, skip
+        if  self.clabels[y] != 0:  # if it already has a label, skip
           continue
 
-      neighbors = self.get_neighbors(X, y)  #find neighbors
+      neighbors = self.get_neighbors(X, y)  #apply fxn to find neighbors
 
       if  len(neighbors) < self.min_samples:  # if the number of neighboring points is less than min_samples (aka not densley surrounded)
         self.clabels[y] = -1  # label that point as noise
@@ -153,8 +155,8 @@ class DBSCAN:
       C += 1  # move onto the next cluster label
       self.clabels[y] = C # assign new cluster label
 
-    # for each point not yes considerd:
-    # determine points and their unclaimed neighbors
+    # for each point not yet considerd:
+    # determine points and their unclaimed neighbors in order to discover and expand clusters
     i = 0
     while i < len(neighbors):
       neighbor_y = int(neighbors[i])  # creating a new cluster
@@ -194,7 +196,7 @@ Cool! Lets compare our algorithm to the "official" [Sci-Kit Learn version](<http
   <img src="/img/ML/sklearn_DBSCAN_blobs.png" />
 </p>
 
-Our DBSCAN from scratch algorithm is a faithful remake! These graphs show how DBSCAN perfroms beautifully on denser, irregularly-shaped data, but is less successful as the number of clusters increase and become less dense. 
+Our DBSCAN-from-scratch algorithm is a faithful remake! These graphs show how DBSCAN perfroms beautifully on denser, irregularly-shaped data, but is less successful as the number of clusters increase and become less dense. 
 
 ## Use Cases
 
