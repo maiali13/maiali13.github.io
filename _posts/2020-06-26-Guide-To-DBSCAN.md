@@ -51,11 +51,13 @@ Despite its effectivity and ease of use, K-Means has several significant disadva
 
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to solve some of the shortcomings of K-Means by clustering datapoints based on density, effectively ignoring “sparse” sections of data by labelling them as noise. This allows it to work robustly with “noisy” datasets, both for identifying clusters and for efficiently identifying the outliers. DBSCAN’s focus on density instead of mean distance results in efficient modeling of non-ellipsoid structures in the data because it allows clusters to take an irregular shape, which is often more representative of organic data. 
 
-Comparison of K-Means (top) vs DBSCAN (below) on two different datasets: note that the K-Means does not recognize outliers and non-ellipsoid shaped clusters.
+
 
 <p align="left">
   <img src="/img/ML/KMEANS_example.png" width="1100" />
 </p>
+
+Comparison of K-Means (top) vs DBSCAN (below) on two different datasets: note that the K-Means does not recognize outliers and non-ellipsoid shaped clusters.
 <p align="right">
   <img src="/img/ML/DBSCAN_example.png" width="1100" />
 </p>
