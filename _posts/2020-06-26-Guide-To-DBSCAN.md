@@ -43,7 +43,8 @@ K-Means requires the input of k , the number of clusters in the dataset. The alg
 - initialize the number of k centroids at random within the dataset,
 - assign each datapoint in the dataset to one of the k clusters,
 - measure the “nearness” of each datapoint to the clusters, 
-- recalculate each cluster’s centroid as a mean of the distance of datapoints assigned to it
+- recalculate each cluster’s centroid as a mean of the distance of datapoints assigned to it.
+
 These last three steps repeat until the algorithm converges, as seen in the above gif. 
 
 
@@ -52,7 +53,7 @@ Despite its effectivity and ease of use, K-Means has several significant disadva
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to solve some of the shortcomings of K-Means by clustering datapoints based on density, effectively ignoring “sparse” sections of data by labelling them as noise. This allows it to work robustly with “noisy” datasets, both for identifying clusters and for efficiently identifying the outliers. DBSCAN’s focus on density instead of mean distance results in efficient modeling of non-ellipsoid structures in the data because it allows clusters to take an irregular shape, which is often more representative of organic data. 
 
 
-** Comparison of K-Means (left) vs DBSCAN (right) on two different datasets**
+**Comparison of K-Means (left) vs DBSCAN (right) on two different datasets**
 <p align="left">
   <img src="/img/ML/KMEANS_example.png" />
 </p>
@@ -62,9 +63,13 @@ DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to
 
 ### DBSCAN
 
+DBSCAN implementation depends on two parameters to determine sample density.  First, a natural number, **"min_samples"**, the minimum number of datapoints within the epsilon neighborhood from a single datapoint. This value serves as the threshold for how many points must be around a “core point” in order for the neighborhood to be considered a cluster. Generally, a value of min_samples <= 3 is not productive. Larger values work better for larger datasets, and so min_samples should scale somewhat with the size of the data. Too large of a min_sample value will result in an overly smooth density estimate. The scientist typically uses their domain knowledge to estimate what a good min_sample value for the dataset is. Second, **ε, epsilon** -abbreviated to "eps"- the radius from any datapoint used to calculate each point’s neighbors. Euclidian distance ![equation](https://latex.codecogs.com/gif.latex?d%5Cleft%28%20x%2Cy%5Cright%29%20%3D%20%5Csqrt%20%7B%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cleft%28%20y_%7Bi%7D-x_%7Bi%7D%5Cright%29%5E2%20%7D) between datapoints is the simplest and most commonplace technique. 
+
 <p align="center">
   <img src="/img/ML/DBSCAN_cluster.png" />
 </p>
+
+
 
 ```python
 import pandas as pd
