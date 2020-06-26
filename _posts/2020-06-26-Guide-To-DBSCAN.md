@@ -41,129 +41,79 @@ import numpy as np
 
 # initialize class
 class DBSCAN:
-"""
-Density-Based Spatial Clustering of Applications with Noise
------------------------------------------------------------
-
-a clustering method for unsupervised learning
-
-Parameters
-----------
-eps: (float, default=0.5)
-
-epsilon; the distance threshold between two points in the same neighborhood
-
-min_samples: (int, default=5)
-
-the number of samples within a point's nighborhood required for it to be weighted as a core point for clustering
-
-(these two parameters determine cluster density)
-"""
-def  __init__(self, eps=0.5, min_samples=5):
-
-self.eps = eps
-
-self.min_samples = min_samples
-
-# self.data = None #the dataset
-
-self.clusters = []  # list of cluster arrays containing point indeces
-
-self.neighbors = {}  # hash dict of {"point": [neighbor1, neighbor2, ...]}
-
+  """
+  Density-Based Spatial Clustering of Applications with Noise
+  -----------------------------------------------------------
+  a clustering method for unsupervised learning
   
+  Parameters
+  ----------
+  eps: (float, default=0.5)
+  epsilon; the distance threshold between two points in the same neighborhood
 
-def  get_neighbors(self, X, y):
-
-"""
-finds a point's epsilon neighbors via calculating euclidian distance/L² norm
-
-between the datapoints
-
-returns a list of all neighboring points
-"""
-
-neighbors = np.where(np.linalg.norm(X[y] - X, axis=1) < self.eps)[0]
-
-return np.array(neighbors)  #might need to remove np.array and just return neigbors
-
+  min_samples: (int, default=5)
+  the number of samples within a point's nighborhood required for it to be weighted as a core point for clustering
   
+  (these two parameters determine cluster density)
+  """
+  def  __init__(self, eps=0.5, min_samples=5):
+    self.eps = eps
+    self.min_samples = min_samples
 
-def  fit(self, X):
-"""
-perform clustering on the dataset
+  def  get_neighbors(self, X, y):
+    """
+    finds a point's epsilon neighbors via calculating euclidian distance/L² norm   between the datapoints
 
-returns self
+    returns a list of all neighboring points
+    """
+    neighbors = np.where(np.linalg.norm(X[y] - X, axis=1) < self.eps)[0]
+    return np.array(neighbors)  #might need to remove np.array and just return neigbors
 
-Parameters
-----------
+  def  fit(self, X):
+    """
+    perform clustering on the dataset
+    returns self
 
-X: (array or array-like)
+    Parameters
+    ----------
+    X: (array or array-like)
+    feature array of points to cluster
+    """
+    C = 0  # cluster counter C
+    n_points = len(X)  # number of data points
+    self.clabels = np.zeros(n_points, dtype=int)  # define empty label list
+    
+    for y in  range(n_points):  #for each point in our input data, do the following:
+      if  self.clabels[y] != 0:  # if it alraedy has a label, skip
+        continue
+    
+    neighbors = self.get_neighbors(X, y)  #find neighbors
 
-feature array of points to cluster
-"""
+    if  len(neighbors) < self.min_samples:  # if the number of neighboring points is less than min_samples (aka not densley surrounded)
+      self.clabels[y] = -1  # label that point as noise
+      continue
 
-C = 0  # cluster counter C
-
-n_points = len(X)  # number of data points
-
-self.clabels = np.zeros(n_points, dtype=int)  # define empty label list
-
-for y in  range(n_points):  #for each point in our input data, do the following:
-
-if  self.clabels[y] != 0:  # if it alraedy has a label, skip
-
-continue
-
-neighbors = self.get_neighbors(X, y)  #find neighbors
-
-  
-
-if  len(neighbors) < self.min_samples:  # if the number of neighboring points is less than min_samples (aka not densley surrounded)
-
-self.clabels[y] = -1  # label that point as noise
-
-continue
-
-# when data point isnt noise
-
-C += 1  # move onto the next cluster label
-
-self.clabels[y] = C # assign new cluster label
-
-  
+    # when data point isnt noise
+    C += 1  # move onto the next cluster label
+    self.clabels[y] = C # assign new cluster label
 
 # for each point not yes considerd:
-
 # determine points and their unclaimed neighbors
-
 i = 0
-
 while i < len(neighbors):
+  neighbor_y = int(neighbors[i])  # creating a new cluster
 
-  
+  if  self.clabels[neighbor_y] == -1:  # label new sparse points as noise
+    self.clabels[neighbor_y] = C
 
-neighbor_y = int(neighbors[i])  # creating a new cluster
+  elif  self.clabels[neighbor_y] == 0:  # skip if already labelled/processed, otherwise add to cluster
+    self.clabels[neighbor_y] = C
+    new_neighbors = self.get_neighbors(X, neighbor_y)  # get neighbors of point
+    
+    if  len(new_neighbors) >= self.min_samples:  # if the number of neighboring points is higher than min_samples (aka densley surrounded)
+      neighbors = np.append(neighbors, new_neighbors)  # exand the cluster with the newly found neighbors
 
-  
-
-if  self.clabels[neighbor_y] == -1:  # label new sparse points as noise
-
-self.clabels[neighbor_y] = C
-
-elif  self.clabels[neighbor_y] == 0:  # skip if already labelled/processed, otherwise add to cluster
-
-self.clabels[neighbor_y] = C
-
-new_neighbors = self.get_neighbors(X, neighbor_y)  # get neighbors of point
-
-if  len(new_neighbors) >= self.min_samples:  # if the number of neighboring points is higher than min_samples (aka densley surrounded)
-
-neighbors = np.append(neighbors, new_neighbors)  # exand the cluster with the newly found neighbors
-
-  
-
-i += 1  # iterate on for all remaining unconsidered points
+  i += 1  # iterate on for all remaining unconsidered points
 ```
 
 <p align="left">
