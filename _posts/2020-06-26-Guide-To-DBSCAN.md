@@ -8,7 +8,7 @@ tags:
 published: true
 ---
 
-### Intro
+
 
 ### Supervised vs Unsupervised Machine Learning
 
@@ -34,7 +34,7 @@ published: true
   <img src="/img/ML/DBSCAN_cluster.png" />
 </p>
 
-```sh
+```python
 import pandas as pd
 import numpy as np
 
