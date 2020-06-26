@@ -77,7 +77,7 @@ Second, **ε, epsilon** -abbreviated to "eps"- the radius from any datapoint use
 
 Additionally, when describing DBSCAN clusters, several terms are important:
 - “core point”: point (*p*) is a core point if at least min_samples (minPts) points are within the epsilon neighborhood N(p) = { p ∈ Data | dist(p, q) ≤ ε} of it (including p).
-- “border point”: points which are “reachable” from core point *p*. They are part of their cluster because they are within "reaching diatance" (aka within the epsilon neighborhood (N(p))) of a core point, but do not meet the criteria set in min_points.
+- “border point”: points which are “reachable” from core point *p*. They are part of their cluster because they are within "reaching diatance" (within the N(p)  epsilon neighborhood) of a core point, but do not meet the criteria set in min_points.
 - “noise”: outliers, points with no or few nearby points.
 
 <img align="left" width="530" height="310" src="/img/ML/DBSCAN_cluster.png" width="360"/>
