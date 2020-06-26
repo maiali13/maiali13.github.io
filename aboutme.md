@@ -1,7 +1,5 @@
 
-### About Miriam
-
-Data Science padawan, University of Michigan alumnus, hobby botanist. 
+Data Science padawan, University of Michigan alumnus, hobby naturalist. 
 
 
 
