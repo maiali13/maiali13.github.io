@@ -177,25 +177,26 @@ class DBSCAN:
 
 
 Cool! Lets compare our algorithm to the "official" [Sci-Kit Learn version](<https://github.com/scikit-learn/scikit-learn/blob/fd237278e/sklearn/cluster/_dbscan.py#L150> "Sci-Kit Learn DBSCAN"). Our DBSCAN algorithm is displayed to the left, and SK-Learn's to the right.
+
 <p align="left">
-  <img src="/img/ML/scratch_DBSCAN.png" />
+  <img src="/img/ML/scratch_DBSCAN.png" width="500" />
 </p>
 <p align="right">
-  <img src="/img/ML/sklearn_DBSCAN.png" />
+  <img src="/img/ML/sklearn_DBSCAN.png" width="500" />
 </p>
 
 <p align="left">
-  <img src="/img/ML/scratch_DBSCAN_blobs.png" />
+  <img src="/img/ML/scratch_DBSCAN_blobs.png" width="500" />
 </p>
 <p align="right">
-  <img src="/img/ML/sklearn_DBSCAN_blobs.png" />
+  <img src="/img/ML/sklearn_DBSCAN_blobs.png" width="500" />
 </p>
 
 
 ### Use Cases
 
 DBSCAN is at its weakest when the clusters within the data vary highly in density, making it impossible to find a decent epsilon value for the entire dataset, since the ideal epsilon value for each cluster would vary similarly.  And, like most machine learning algorithms, DBSCAN suffers greatly from the “curse of dimensionality”, where clustering capabilities are weakened as the number of dimensions increase and the concept of distance becomes less meaningful.
-Despite these drawbacks, DBSCAN has been incredibly useful in practice and is regularly applied in research across industry and several scientific fields. Biomedical research and medical imaging, recommendation engines and search result analysis, market research, and studies that require image preprocessing all use variations of DBSCAN machine learning. [Netflix](< https://netflixtechblog.com/tracking-down-the-villains-outlier-detection-at-netflix-40360b31732> “Netflix”) used DBSCAN’s effective outlier detection on its server metrics to find the causes of service outages. 
+Despite these drawbacks, DBSCAN has been incredibly useful in practice and is regularly applied in research across industry and several scientific fields. Biomedical research and medical imaging, recommendation engines and search result analysis, market research, and studies that require image preprocessing all use variations of DBSCAN machine learning. [Netflix](<https://netflixtechblog.com/tracking-down-the-villains-outlier-detection-at-netflix-40360b31732> “Netflix”) used DBSCAN’s effective outlier detection on its server metrics to find the causes of service outages. 
 
 
 
