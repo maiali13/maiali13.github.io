@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beginner's Guide to DBSCAN
-bigimg: img/ML/brain.png
+bigimg: img/ML/brain1.png
 tags:
   - Machine Learning
   - Science
