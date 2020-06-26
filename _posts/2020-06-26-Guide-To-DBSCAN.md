@@ -78,10 +78,10 @@ Additionally, when describing DBSCAN clusters, several terms are important:
 
 <img align="left" width="530" height="350" src="/img/ML/DBSCAN_cluster.png" width="360"/>
 
-As illustrated in the image to the left, where DBSCAN(eps= ε, min_samples= 3), each cluster within the data consists of these core points (red) and border points (green). Core points have at least min_points (minPts) in their epsilon neighborhood (N ε), whereas border points have less than min_points in their N ε. However, border points are still inside the N ε of a core point, and therefore in a cluster. Points which are outside the N ε of every core point within the data, and have less than min_points in their N ε, are considered noise (blue), and not within any cluster.<sup name="a5">[5](#f5)</sup>
+As illustrated in the image to the left, where DBSCAN(eps= ε, min_samples= 3), each cluster within the dataset consists of core points (red), and border points (green). Core points contain at least min_points (minPts) in their epsilon neighborhood (N ε), whereas border points contain less than min_points in their N ε. However, border points are still inside the N ε of a core point, and therefore in a cluster. Points which are outside the N ε of every core point within the data, *and* have less than min_points in their N ε, are considered noise (blue), and not within any cluster.<sup name="a5">[5](#f5)</sup>
 
 
-So, DBSCAN requires two parameters epsilon (ε) and min_samples, which determine cluster density. The algorithm will then:
+So, to break it down, DBSCAN requires two parameters epsilon (ε), and min_samples, which determine cluster density. Once these parameters are set, the algorithm will:
 - arbitrarily select the point (*p*)
 - determine which points are neighbors of *p* using the parameters ε and min_samples,
 - create a new cluster areound set *p* and its neighbors if it is a "core point",
