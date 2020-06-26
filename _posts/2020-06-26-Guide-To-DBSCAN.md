@@ -19,7 +19,7 @@ How do you even begin? What can you do to find the underlying structure of the d
 
 ### Supervised vs Unsupervised Machine Learning
 
-in short, answers to these questions boil down to whether or not your data is labeled.  If you’re lucky, you already know about the structure of your data. Congratulations! You can now analyze your data with supervised machine learning. With “supervised” learning, the algorithm can be taught what the correct output for given inputs. The algorithm will then search for patterns in the data corresponding to this information, and can then label new input data. Supervised machine learning algorithms include many of the most common statistical analysis methods, such as linear regression and k-Nearest Neighbors. These methods have been used extensively, and are incredibly useful to science because their performance can be judged by a variety of metrics, like accuracy and precision.
+In short, answers to these questions boil down to whether or not your data is labeled.  If you’re lucky, you already know about the structure of your data. Congratulations! You can now analyze your data with supervised machine learning. With “supervised” learning, the algorithm can be taught what the correct output for given inputs. The algorithm will then search for patterns in the data corresponding to this information, and can then label new input data. Supervised machine learning algorithms include many of the most common statistical analysis methods, such as linear regression and k-Nearest Neighbors. These methods have been used extensively, and are incredibly useful to science because their performance can be judged by a variety of metrics, like accuracy and precision.
 
 But how can you analyze data that isn’t labelled?  If the input data doesn’t have labels, the machine learning algorithm cannot be taught the desired output, and therefore cannot evaluate the accuracy of its analysis of new data.  Then how can an “unsupervised” model learn? And how can we use it to draw inferences from messy data?
 
@@ -35,9 +35,7 @@ Essentially what unsupervised learning algorithms attempt to do is to find the u
 
 In science, possibly the most common clustering algorithm is K-Means, the simplest clustering algorithm used in statistical data analysis. First proposed in the 1950s, its age and ease of use have led to its near ubiquity.<sup name="a1">[1](#f1)</sup> Today there are dozens of variations and improvements on the K-Means algorithm, however the naïve K-Means remains an effective and popular choice.<sup name="a2">[2](#f2)</sup>  K-Means works simply by dividing the data into the number of clusters k, in which the datapoints share a mean distance to the “centroid” (central point) of the cluster. 
 
-<p align="right">
-  <img src="/img/ML/kmeans_convergence.gif" width="450" />
-</p>
+<img align="right" width="450" height="410"src="/img/ML/kmeans_convergence.gif" />
 
 K-Means requires the input of k , the number of clusters in the dataset. The algorithm will then:
 - initialize the number of k centroids at random within the dataset,
@@ -53,7 +51,7 @@ Despite its effectivity and ease of use, K-Means has several significant disadva
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) attempts to solve some of the shortcomings of K-Means by clustering datapoints based on density, effectively ignoring “sparse” sections of data by labelling them as noise. This allows it to work robustly with “noisy” datasets, both for identifying clusters and for efficiently identifying the outliers. DBSCAN’s focus on density instead of mean distance results in efficient modeling of non-ellipsoid structures in the data because it allows clusters to take an irregular shape, which is often more representative of organic data. 
 
 <p align="center">
-Comparison of K-Means (top) vs DBSCAN (below) on two different datasets:
+Comparison of K-Means (top) vs DBSCAN (below) on two different datasets: note that the K-Means does not recognize outliers and non-ellipsoid shaped clusters.
 </p>
 
 <p align="left">
@@ -63,7 +61,7 @@ Comparison of K-Means (top) vs DBSCAN (below) on two different datasets:
   <img src="/img/ML/DBSCAN_example.png" width="1100" />
 </p>
 
-Note that the K-Means does not recognize outliers and non-ellipsoid shaped clusters.
+
 
 ### DBSCAN
 
