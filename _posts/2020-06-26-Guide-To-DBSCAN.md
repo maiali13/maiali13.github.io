@@ -172,7 +172,7 @@ class DBSCAN:
 ```
 
 
-Cool! Lets compare our algorithm to the "official" [Sci-Kit Learn version](<https://github.com/scikit-learn/scikit-learn/blob/fd237278e/sklearn/cluster/_dbscan.py#L150> "Sci-Kit Learn DBSCAN"). 
+Cool! Lets compare our algorithm to the "official" [Sci-Kit Learn version](<https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html> "Sci-Kit Learn DBSCAN"). 
 
 
 <p align="center">
