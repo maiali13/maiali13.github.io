@@ -41,7 +41,11 @@ Next, we attempted to extract location from tweets based on the only locational 
 Our next approach was to attempt to use named entity recognition (NER) on tweets extracted from the Twitter API via keyword queries. This was not entirely accurate, and we began encountering problems with rate limiting from the API. The API also was not returning tweets more than about a week old. 
 While we were attempting to find a solution to our problem, a team member found the [Police Brutality 2020](<https://github.com/2020PB/police-brutality> “Police Brutality 2020”) database, a repository started in order to track incidents of excessive use of force by police in the wake of the protests against police brutality sparked by the murder of George Floyd in March of 2020. 
 
-The Police Brutality 2020 database had several significant advantages over the tweet scraping we were currently doing. First, it was already assembled by incident, so we would not have to create a model to link multiple news articles or social media posts by incident. Secondly, each incident had an explicitly designated location and short description of the event. While the most precise location provided in the database was the city the incident took place in, it was still an enormous improvement from trying to predict tweet location using NLP. So, we pulled the PB2020 data, cleaned and processed it, and added the city’s geolocation (latitude and longitude) for each incident into a new database. 
+The Police Brutality 2020 database had several significant advantages over the tweet scraping we were currently doing. First, it was already assembled by incident, so we would not have to create a model to link multiple news articles or social media posts by incident. Secondly, each incident had an explicitly designated location and short description of the event. While the most precise location provided in the database was the city the incident took place in, it was still an enormous improvement from trying to predict tweet location using NLP. So, we pulled the PB2020 data, cleaned and processed it, and added the city’s geolocation (latitude and longitude) for each incident into a new database. We were encouraged when we saw the snazzy logo for our project designed by the frontend team. 
+
+<p align="left">
+  <img src="/img/hrf/logo.png"/>
+</p>
 
 ## Natural Language Processing
 
