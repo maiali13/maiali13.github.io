@@ -43,7 +43,7 @@ While we were attempting to find a solution to our problem, a team member found 
 
 The Police Brutality 2020 database had several significant advantages over the tweet scraping we were currently doing. First, it was already assembled by incident, so we would not have to create a model to link multiple news articles or social media posts by incident. Secondly, each incident had an explicitly designated location and short description of the event. While the most precise location provided in the database was the city the incident took place in, it was still an enormous improvement from trying to predict tweet location using NLP. So, we pulled the PB2020 data, cleaned and processed it, and added the city’s geolocation (latitude and longitude) for each incident into a new database. We were encouraged when we saw the snazzy logo for our project designed by the frontend team. 
 
-<p align="left">
+<p align="center">
   <img src="/img/hrf/logo.png"/>
 </p>
 
