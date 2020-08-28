@@ -6,10 +6,8 @@ tags:
 published: true
 ---
 
-[Human Rights First](<https://www.humanrightsfirst.org/> "Human Rights First") is a nonprofit that seeks to use American international influence to improve civil liberties both domestically globally. 
-Since police brutality has been a key issue this year, HRF asked us to create a website and database recording police use of force across the United States. This website should have a map of the country with incidents displayed by location.
-The database should be populated from social media sites like Twitter so that the data is constantly relevant to current events and each datapoint on the map can link back to evidence posted online. There should also be some search functionality of the database. 
-HRF envisions that this tool would primarily be used by journalists, activists, and researchers to quickly gather information on trends and recent developments regarding police use of force across the country. 
+[Human Rights First](<https://www.humanrightsfirst.org/> "Human Rights First") is a nonprofit that seeks to use American international influence to improve civil liberties both domestically and globally. 
+Considering that police brutality has become an especially important issue to Americans this year, HRF asked us to create a website and database recording police use of force across the United States. This website should have a map of the country displaying localized incidents, based on a database populated with posts from social media sites like Twitter so that the data is constantly relevant to current events and each datapoint on the map can link back to evidence posted online. There should also be some search functionality of the database. HRF envisions that this tool would primarily be used by journalists, activists, and researchers in order to quickly gather information on trends and recent developments regarding police use of force across the country. 
 
 ## Deliverables
 
