@@ -45,12 +45,14 @@ The Police Brutality 2020 database had several significant advantages over the t
 We then began to investigate NLP techniques to add categories to the data. These categories would be displayed on the frontend of the website as tags. For example, an incident would have tags associated with it in order to help the user extract information about that incident at a quick glance. For example, if an incident included tear gas. These tags could also aid the search function, and possibly allow for interactive selection of tags in order to display how those elements of police use of force have been deployed over time across the United States. 
 
 
-<p align="right">
-  <img src="/img/hrf/snorkel.png"/>
-</p>
+<img align="right" width="200" height="370" src="/img/hrf/snorkel.png" />
 
-Our team was recommended by a senior data scientist to investigate a tool called [Snorkel](https://www.snorkel.org/ “Snorkel”), which essentially applies “weakly supervised” learning to text in a new form of Named Entity Recognition. We applied snorkel NER techniques to our incident data in order to extract tags based on the type of force used in the incident and the people involved. For example, an incident might have tags for tear gas and flash grenades, used by federal agents on protestors. Using Snorkel, we created a dataset which included the PB2020 incidents, their location data, and these tags for involved parties and the type of force applied. We then created a new database for our training dataset, 
-which also serves to populate the map visualization created with Plotly for the website.
+
+Our team was recommended by a senior data scientist to investigate a tool called [Snorkel](https://www.snorkel.org/ “Snorkel”), which essentially applies “weakly supervised” learning to text in a new form of Named Entity Recognition. We applied snorkel NER techniques to our incident data in order to extract tags based on the type of force used in the incident and the people involved. For example, an incident might have tags for tear gas and flash grenades, used by federal agents on protestors. Using Snorkel, we created a dataset which included the PB2020 incidents, their location data, and these tags for involved parties and the type of force applied. We then created a new database for our training dataset, which also serves to populate the map visualization created with Plotly for the website. While this process came with it's own small challenges and chores, including creating the new database schema (below), it was enjoyable to dip my feet back into DS after two months of computer science. 
+
+<p align="center">
+  <img src="/img/hrf/dbschema2.jpg"/>
+</p>
 
 ## Next Steps
 
