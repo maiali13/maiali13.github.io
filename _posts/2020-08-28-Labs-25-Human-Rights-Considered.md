@@ -67,13 +67,13 @@ First, when we were still trying to source incidents from Twitter, our schema re
 <p align="center">
   <img src="/img/hrf/dbschema1.jpg"/>
   <img src="/img/hrf/dbschema2.jpg"/>
-  <img src="/img/hrf/dbschemafinal.jpg"/>
+  <img src="/img/hrf/dbschemafinal.png"/>
 </p>
 
 This schema represents our current relational database, deployed with FastAPI hosted with AWS ElasticBeanstalk . New incidents and additional evidence for existing incidents from Police Brutality 2020 will be added to the database via an AWS Lambda cron job, triggered by AWS CloudWatch at a weekly interval. 
 
 <p align="center">
-  <img src="/img/hrf/ds_structure.jpg"/>
+  <img src="/img/hrf/ds_structure.png"/>
 </p>
 
 ## Next Steps
